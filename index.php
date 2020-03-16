@@ -1,2 +1,3 @@
-Init.
-<?php wp_footer(); ?>
+<?php get_header(); ?>
+Hi!
+<?php get_footer(); ?>
