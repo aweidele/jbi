@@ -7,8 +7,8 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-var iconfont = require('gulp-iconfont');
-var iconfontCss = require('gulp-iconfont-css');
+// var iconfont = require('gulp-iconfont');
+// var iconfontCss = require('gulp-iconfont-css');
 var gcmq = require('gulp-group-css-media-queries');
 
 var sassOptions = {
