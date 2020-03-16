@@ -15,3 +15,18 @@
   wp_head();
 ?>
 </head>
+<body>
+  <header>
+    <div>
+      <h1><a href="<?php echo get_home_url(); ?>"><strong>Jeffrey Beers</strong> International</a></h1>
+      <nav class="nav-primary">
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'primary-menu'
+            )
+          ); ?>
+      </nav>
+    </div>
+  </header>
+</body>

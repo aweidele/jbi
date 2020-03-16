@@ -1,9 +1,9 @@
 // BASE IMPORTS
+@import 'base/_variables';
 @import 'base/_reset';
 @import 'base/_fonts';
-@import 'base/_variables';
 @import 'base/_mixins';
 
-body {
-  font-family: $headingFF;
-}
+// STRUCTURE
+@import 'structure/copy/_base';
+@import 'structure/header/_header';

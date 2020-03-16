@@ -3,7 +3,6 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: Verdana, sans-serif;
 }
 
 ul,
@@ -25,4 +24,8 @@ a {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+strong {
+  font-weight: $bold;
 }

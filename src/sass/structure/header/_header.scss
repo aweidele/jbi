@@ -1,0 +1,20 @@
+header {
+  > div {
+    @include contentWidth;
+
+    @media #{$mediaTablet} {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  h1 {
+    a {
+      color: $primary;
+
+      @include hover {
+        color: $secondary;
+      }
+    }
+  }
+}

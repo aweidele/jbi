@@ -15,3 +15,9 @@ function enqueue_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+
+// Register Menu
+add_action( 'init', 'register_my_menu' );
+function register_my_menu() {
+  register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
+}
