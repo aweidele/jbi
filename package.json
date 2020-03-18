@@ -23,7 +23,6 @@
     "gulp-pxtorem": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2",
     "gulp-group-css-media-queries": "^1.2.2",
