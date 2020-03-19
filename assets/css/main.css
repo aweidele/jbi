@@ -16,7 +16,6 @@ ol {
 a {
   -webkit-transition: all .25s;
   transition: all .25s;
-  text-decoration: none;
 }
 
 .sr-only {
@@ -34,6 +33,10 @@ strong {
   font-weight: 700;
 }
 
+body {
+  font-family: "Assistant", sans-serif;
+}
+
 h1 {
   font-family: "Assistant", sans-serif;
   font-weight: 300;
@@ -49,10 +52,27 @@ header > div {
 
 header h1 a {
   color: #1E3141;
+  text-decoration: none;
 }
 
 header h1 a:hover,
 header h1 a:focus {
+  color: #707070;
+}
+
+header nav {
+  font-family: "Expletus Sans", cursive;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+header nav a {
+  color: #1E3141;
+  text-decoration: none;
+}
+
+header nav a:hover,
+header nav a:focus {
   color: #707070;
 }
 
@@ -75,7 +95,15 @@ header h1 a:focus {
     display: none;
   }
 
-  header nav .menu-main-container > ul {
+  header nav a {
+    padding: 0 0.75rem;
+  }
+
+  header nav {
+    margin: 0 -0.75rem;
+  }
+
+  header nav ul.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

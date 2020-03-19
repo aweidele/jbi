@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var pxtorem = require('gulp-pxtorem');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
@@ -64,7 +64,7 @@ var pxtoremOptions = {
 gulp.task('sass', function(){
   return gulp
     .src('src/sass/main.scss')
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     //.pipe(sourcemaps.write())
     .pipe(gcmq())

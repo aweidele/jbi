@@ -12,7 +12,7 @@ ol {
 
 a {
   transition: all .25s;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 .sr-only {
@@ -28,4 +28,8 @@ a {
 
 strong {
   font-weight: $bold;
+}
+
+body {
+  font-family: $copyFF;
 }

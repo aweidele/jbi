@@ -1,10 +1,29 @@
 nav {
-  .menu-main-container {
-    @media #{$mediaDesktop} {
-      > ul {
-        display: flex;
-        justify-content: flex-end;
-      }
+  font-family: $headingFF;
+  font-size: 15px;
+  text-transform: uppercase;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+
+    @include hover {
+      color: $secondary;
     }
+
+    @media #{$mediaDesktop} {
+      padding: 0 12px;
+    }
+  }
+  @media #{$mediaDesktop} {
+    margin: 0 -12px;
+    ul.menu {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .sub-menu {
+    //display: none;
   }
 }
