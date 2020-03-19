@@ -13,9 +13,27 @@
 } ?></title>
 <?php
   wp_head();
+
+  // Adding body classes
+  $body_classes = [get_post_type()];
+  if( is_front_page() ) {
+    $body_classes[] = "front-page";
+  }
+  $body_classes[] = $post->post_name;
+  if( is_user_logged_in() ) {
+    $body_classes[] = "loggedin";
+  }
+  // Project Archive
+  if ( is_post_type_archive('projects') || is_tax('industry') ) {
+    $body_classes[] = "project-archive";
+  }
+  // Single project
+  if ( is_singular('projects') ) {
+    $body_classes[] = 'project-detail';
+  }
 ?>
 </head>
-<body>
+<body class="<?=implode($body_classes, " ")?>">
   <header>
     <div>
       <h1><a href="<?php echo get_home_url(); ?>"><strong>Jeffrey Beers</strong> International</a></h1>

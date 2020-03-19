@@ -1,7 +1,7 @@
 nav {
   font-family: $headingFF;
   font-size: 15px;
-  text-transform: uppercase;
+  position: relative;
 
   a {
     color: $primary;
@@ -17,13 +17,43 @@ nav {
   }
   @media #{$mediaDesktop} {
     margin: 0 -12px;
-    ul.menu {
+  }
+
+  ul.menu {
+    @media #{$mediaDesktop} {
       display: flex;
       justify-content: flex-end;
+    }
+
+    > li {
+      > a {
+        text-transform: uppercase;
+        letter-spacing: 1.13px;
+      }
+
+      @include hover {
+        @media #{$mediaDesktop} {
+          .sub-menu {
+            display: flex;
+          }
+        }
+      }
     }
   }
 
   .sub-menu {
-    //display: none;
+    @media #{$mediaDesktop} {
+      display: none;
+      justify-content: flex-end;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      min-width: 100%;
+
+      a {
+        padding-top: 10px;
+        display: block;
+      }
+    }
   }
 }

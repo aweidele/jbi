@@ -63,7 +63,7 @@ header h1 a:focus {
 header nav {
   font-family: "Expletus Sans", cursive;
   font-size: 0.9375rem;
-  text-transform: uppercase;
+  position: relative;
 }
 
 header nav a {
@@ -74,6 +74,11 @@ header nav a {
 header nav a:hover,
 header nav a:focus {
   color: #707070;
+}
+
+header nav ul.menu > li > a {
+  text-transform: uppercase;
+  letter-spacing: 1.13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,5 +115,28 @@ header nav a:focus {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+
+  header nav ul.menu > li:hover .sub-menu,
+  header nav ul.menu > li:focus .sub-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  header nav .sub-menu {
+    display: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 100%;
+  }
+
+  header nav .sub-menu a {
+    padding-top: 0.625rem;
+    display: block;
   }
 }
