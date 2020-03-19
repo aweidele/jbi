@@ -1,0 +1,10 @@
+nav {
+  .menu-main-container {
+    @media #{$mediaDesktop} {
+      > ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

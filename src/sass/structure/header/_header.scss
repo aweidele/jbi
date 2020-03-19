@@ -8,6 +8,11 @@ header {
       justify-content: space-between;
     }
   }
+  button {
+    @media #{$mediaDesktop} {
+      display: none;
+    }
+  }
   h1 {
     a {
       color: $primary;
@@ -17,4 +22,6 @@ header {
       }
     }
   }
+
+  @import '_nav';
 }

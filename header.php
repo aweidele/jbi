@@ -19,6 +19,7 @@
   <header>
     <div>
       <h1><a href="<?php echo get_home_url(); ?>"><strong>Jeffrey Beers</strong> International</a></h1>
+      <button>Menu</button>
       <nav class="nav-primary">
         <?php
           wp_nav_menu(
