@@ -44,45 +44,51 @@ h1 {
   font-size: 1.5625rem;
 }
 
-header > div {
+.main-header > div {
   max-width: 1240px;
   margin: auto;
   padding: 0 1.25rem;
 }
 
-header h1 a {
+.main-header h1 a {
   color: #1E3141;
   text-decoration: none;
 }
 
-header h1 a:hover,
-header h1 a:focus {
+.main-header h1 a:hover,
+.main-header h1 a:focus {
   color: #707070;
 }
 
-header nav {
+.main-header nav {
   font-family: "Expletus Sans", cursive;
   font-size: 0.9375rem;
   position: relative;
 }
 
-header nav a {
+.main-header nav a {
   color: #1E3141;
   text-decoration: none;
 }
 
-header nav a:hover,
-header nav a:focus {
+.main-header nav a:hover,
+.main-header nav a:focus {
   color: #707070;
 }
 
-header nav ul.menu > li > a {
+.main-header nav ul.menu > li > a {
   text-transform: uppercase;
   letter-spacing: 1.13px;
 }
 
+.main-footer > div {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 1.25rem;
+}
+
 @media screen and (min-width: 768px) {
-  header > div {
+  .main-header > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,19 +102,19 @@ header nav ul.menu > li > a {
 }
 
 @media screen and (min-width: 1025px) {
-  header button {
+  .main-header button {
     display: none;
   }
 
-  header nav a {
+  .main-header nav a {
     padding: 0 0.75rem;
   }
 
-  header nav {
+  .main-header nav {
     margin: 0 -0.75rem;
   }
 
-  header nav ul.menu {
+  .main-header nav ul.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -117,14 +123,14 @@ header nav ul.menu > li > a {
             justify-content: flex-end;
   }
 
-  header nav ul.menu > li:hover .sub-menu,
-  header nav ul.menu > li:focus .sub-menu {
+  .main-header nav ul.menu > li:hover .sub-menu,
+  .main-header nav ul.menu > li:focus .sub-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  header nav .sub-menu {
+  .main-header nav .sub-menu {
     display: none;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -135,7 +141,7 @@ header nav ul.menu > li > a {
     min-width: 100%;
   }
 
-  header nav .sub-menu a {
+  .main-header nav .sub-menu a {
     padding-top: 0.625rem;
     display: block;
   }
