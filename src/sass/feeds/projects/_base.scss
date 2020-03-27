@@ -1,3 +1,5 @@
+// SINGLE PROJECT
+
 body.projects {
    > main {
      margin-top: -$headerHeight;
@@ -10,11 +12,25 @@ body.projects {
   position: relative;
   max-height: 100vh;
   overflow: hidden;
-  
+  margin-bottom: 88px;
+
   img {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  .project-title {
+    padding-bottom: 38px;
+    color: $white;
+
+    small {
+      font-size: 30px;
+    }
+
+    > div {
+      @include contentWidth;
+    }
   }
 }
 
@@ -23,8 +39,11 @@ body.projects {
   left: 0;
   bottom: 0;
   width: 100%;
-  > div {
-    @include contentWidth;
+
+  small {
+    font-family: $headingFF;
+    line-height: (40 / 30) * 1em;
+    font-weight: $bold;
   }
 }
 
@@ -64,4 +83,54 @@ body.projects {
 .col-3 {
   width: 100%;
   flex: 0 0 100%;
+}
+
+// PROJECT GRID
+.related-projects {
+  padding: 70px 0;
+}
+
+.project-grid {
+  > div {
+    @include contentWidth;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  article {
+    padding: 12px;
+    width: 33.33%;
+    flex: 0 0 33.33%;
+
+    &:nth-child(3n + 2) {
+      transform: translateY(-70px);
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    color: $white;
+  }
+
+  small {
+    font-size: 25px;
+  }
+
+  .project-title {
+    padding-bottom: 48px;
+  }
+}
+
+.project-grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -12px;
+  padding: 68px 0 70px;
+  text-align: center;
 }

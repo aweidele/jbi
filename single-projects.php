@@ -28,12 +28,38 @@
             $w = get_field('grid_width', $image['ID']);
         ?>
         <div class="<?php echo $w; ?>">
-          <img src="<?php echo $image['sizes']['proj-hero']?>" alt="<?php echo $image['alt']; ?>">
+          <img src="<?php echo $image['sizes']['proj-'.$w]?>" alt="<?php echo $image['alt']; ?>">
         </div>
         <?php } ?>
       </div>
     </div>
   </article>
+  <?php if ( sizeof( $content['related_projects'] ) ) { ?>
+  <div class="project-grid archive related-projects">
+    <div>
+      <h3 class="h2">Related Projects</h3>
+      <div class="project-grid-inner">
+        <?php
+          foreach( $content['related_projects'] as $project ) {
+            $thumb = get_field('thumbnail',$project->ID);
+            $location = get_field('location',$project->ID);
+        ?>
+        <article id="<?php echo $project->post_name; ?>">
+          <a href="<?php echo get_permalink($project->ID); ?>">
+            <picture>
+              <img src="<?php echo $thumb['sizes']['proj-thumb']; ?>" alt="<?php echo $thumb['alt']; ?>">
+            </picture>
+            <div class="project-title">
+              <h4 class="h2"><?php echo $project->post_title; ?></h4>
+              <small><?php echo $location; ?></small>
+            </div>
+          </a>
+        </article>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+  <?php } ?>
 <pre><?php print_r($content); ?></pre>
 <?php
   endwhile;

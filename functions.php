@@ -23,10 +23,11 @@ function register_my_menu() {
 }
 
 // Image sizes
+add_image_size( 'proj-thumb', 580, 819, true );
 add_image_size( 'proj-hero', 1920, 1075, true );
-add_image_size( 'proj-1', 580, 850, true );
-add_image_size( 'proj-2', 1180, 850, true );
-add_image_size( 'proj-3', 1788, 850, true );
+add_image_size( 'proj-col-1', 580, 850, true );
+add_image_size( 'proj-col-2', 1180, 850, true );
+add_image_size( 'proj-col-3', 1788, 850, true );
 
 // Options page
 if( function_exists('acf_add_options_page') ) {

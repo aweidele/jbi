@@ -98,25 +98,6 @@
             "min": 0,
             "max": 3,
             "return_format": "object"
-        },
-        {
-            "key": "field_5e7d4aad5b5f5",
-            "label": "Photo Credit",
-            "name": "photo_credit",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -136,5 +117,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585270656
+    "modified": 1585304139
 }
