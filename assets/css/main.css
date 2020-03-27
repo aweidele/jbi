@@ -44,20 +44,36 @@ h1 {
   font-size: 1.5625rem;
 }
 
+.main-header {
+  height: 2.0625rem;
+  position: relative;
+  z-index: 10;
+}
+
 .main-header > div {
   max-width: 1240px;
   margin: auto;
   padding: 0 1.25rem;
 }
 
-.main-header h1 a {
+.main-header a {
   color: #1E3141;
   text-decoration: none;
 }
 
-.main-header h1 a:hover,
-.main-header h1 a:focus {
+.main-header a:hover,
+.main-header a:focus {
   color: #707070;
+  text-decoration: underline;
+}
+
+body.projects .main-header a {
+  color: #FFFFFF;
+}
+
+body.projects .main-header a:hover,
+body.projects .main-header a:focus {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .main-header nav {
@@ -109,6 +125,35 @@ h1 {
   height: 6.1875rem;
   fill: #07144E;
   display: block;
+}
+
+body.projects > main {
+  margin-top: -2.0625rem;
+  position: relative;
+  z-index: 0;
+}
+
+.project-hero {
+  position: relative;
+}
+
+.project-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.project-title > div {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 1.25rem;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,3 +1,4 @@
+  </main>
 <?php
   $contact = get_field('contact', 'option');
   $social = get_field('social', 'option');
@@ -34,7 +35,8 @@
                   echo "test";
                   break;
                 case 'instagram':
-                  echo "testo";
+                  echo "testogulp
+                  ";
                   break;
               }
             ?>
@@ -44,7 +46,7 @@
       </div>
     </div>
   </footer>
-  <pre><?php print_r($social); ?></pre>
+  <!-- pre><?php print_r($social); ?></pre -->
 <?php wp_footer(); ?>
 </body>
 </html>
