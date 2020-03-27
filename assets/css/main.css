@@ -85,6 +85,30 @@ h1 {
   max-width: 1240px;
   margin: auto;
   padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 1.73px;
+  color: #1E3141;
+}
+
+.footer-logo svg {
+  width: 5.3125rem;
+  height: 6.1875rem;
+  fill: #07144E;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {

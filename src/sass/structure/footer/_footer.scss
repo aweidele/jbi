@@ -1,5 +1,29 @@
 .main-footer {
   > div {
     @include contentWidth;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact {
+    display: flex;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.73px;
+    color: $primary;
+  }
+
+  > div {
+
+  }
+}
+
+.footer-logo {
+  svg {
+    width: 85px;
+    height: 99px;
+    fill: $accent-1;
+    display: block;
   }
 }
