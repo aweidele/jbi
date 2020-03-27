@@ -20,7 +20,9 @@
                 "col-2": "Two Third",
                 "col-3": "Full Width"
             },
-            "default_value": [],
+            "default_value": [
+                "col-1"
+            ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -46,5 +48,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585270993
+    "modified": 1585274128
 }

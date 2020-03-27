@@ -135,6 +135,8 @@ body.projects > main {
 
 .project-hero {
   position: relative;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .project-hero img {
@@ -154,6 +156,55 @@ body.projects > main {
   max-width: 1240px;
   margin: auto;
   padding: 0 1.25rem;
+}
+
+.project-main > div {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 1.25rem;
+}
+
+.project-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+
+.project-main-inner [class^="col"] {
+  padding: 0.75rem;
+}
+
+.col-1 {
+  width: 33.33%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.col-2 {
+  width: 66.67%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.67%;
+          flex: 0 0 66.67%;
+}
+
+.col-3 {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 @media screen and (min-width: 768px) {
