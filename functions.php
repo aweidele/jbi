@@ -84,7 +84,7 @@ function custom_post_type() {
   	    'supports' => array( 'title', 'custom-fields', 'editor', 'page-attributes'),
   	    'has_archive' => true,
   			'rewrite' => array(
-  				'slug' => 'project'),
+  				'slug' => 'projects'),
   		);
   		register_post_type( 'projects', $args );
 

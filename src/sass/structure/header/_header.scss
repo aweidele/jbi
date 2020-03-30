@@ -31,7 +31,7 @@
     }
 
     // Light
-    body.projects & {
+    body.projects:not(.project-archive) & {
       color: $white;
 
       @include hover {

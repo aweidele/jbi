@@ -1,6 +1,6 @@
 // SINGLE PROJECT
 
-body.projects {
+body.projects:not(.project-archive) {
    > main {
      margin-top: -$headerHeight;
      position: relative;

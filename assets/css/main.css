@@ -84,12 +84,12 @@ p {
   text-decoration: underline;
 }
 
-body.projects .main-header a {
+body.projects:not(.project-archive) .main-header a {
   color: #FFFFFF;
 }
 
-body.projects .main-header a:hover,
-body.projects .main-header a:focus {
+body.projects:not(.project-archive) .main-header a:hover,
+body.projects:not(.project-archive) .main-header a:focus {
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -144,7 +144,7 @@ body.projects .main-header a:focus {
   display: block;
 }
 
-body.projects > main {
+body.projects:not(.project-archive) > main {
   margin-top: -2.0625rem;
   position: relative;
   z-index: 0;
