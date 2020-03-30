@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="project-grid related-projects">
+<div class="project-grid archive related-projects">
   <div>
     <div class="project-grid-inner">
       <?php

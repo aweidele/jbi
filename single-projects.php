@@ -60,7 +60,6 @@
     </div>
   </div>
   <?php } ?>
-<pre><?php print_r($content); ?></pre>
 <?php
   endwhile;
   endif;

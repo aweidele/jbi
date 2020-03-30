@@ -124,6 +124,11 @@ body.projects:not(.project-archive) {
   .project-title {
     padding-bottom: 48px;
   }
+
+  &.archive {
+    background: $primary;
+    color: $white;
+  }
 }
 
 .project-grid-inner {

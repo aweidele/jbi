@@ -12,6 +12,10 @@
     text-transform: uppercase;
     letter-spacing: 1.73px;
     color: $primary;
+
+    p {
+      margin: 0;
+    }
   }
 
   > div {
