@@ -29,15 +29,6 @@
       color: $secondary;
       text-decoration: underline;
     }
-
-    // Light
-    body.projects:not(.project-archive) & {
-      color: $white;
-
-      @include hover {
-        color: rgba($white,.4);
-      }
-    }
   }
 
   @import '_nav';
