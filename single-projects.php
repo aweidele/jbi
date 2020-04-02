@@ -62,7 +62,7 @@
   <?php if ( sizeof( $content['related_projects'] ) ) { ?>
   <div class="project-grid archive related-projects">
     <div>
-      <h3 class="h2">Related Projects</h3>
+      <h3>Related Projects</h3>
       <div class="project-grid-inner">
         <?php
           foreach( $content['related_projects'] as $project ) {
@@ -75,7 +75,7 @@
               <img src="<?php echo $thumb['sizes']['proj-thumb']; ?>" alt="<?php echo $thumb['alt']; ?>">
             </picture>
             <div class="project-title">
-              <h4 class="h2"><?php echo $project->post_title; ?></h4>
+              <h4 class="h3"><?php echo $project->post_title; ?></h4>
               <small><?php echo $location; ?></small>
             </div>
           </a>

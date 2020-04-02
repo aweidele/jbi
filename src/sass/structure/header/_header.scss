@@ -1,7 +1,14 @@
 .main-header {
+  width: 100%;
   height: $headerHeight;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
+
+  .loggedin & {
+    top: 32px;
+  }
 
   > div {
     @include contentWidth;
