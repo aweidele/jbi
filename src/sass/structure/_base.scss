@@ -2,7 +2,7 @@ body {
   &.front-page,
   &.projects:not(.project-archive) {
      > main {
-       margin-top: -$headerHeight;
+       margin-top: 0;
        position: relative;
        z-index: 0;
      }
@@ -36,3 +36,4 @@ body {
 @import 'copy/_base';
 @import 'header/_header';
 @import 'footer/_footer';
+@import '_front-page';

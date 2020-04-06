@@ -1,8 +1,11 @@
+// EXTERNAL SASS
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import '../../node_modules/owl.carousel/src/scss/owl.theme.default.scss';
 // BASE IMPORTS
 @import 'base/_variables';
+@import 'base/_mixins';
 @import 'base/_reset';
 @import 'base/_fonts';
-@import 'base/_mixins';
 
 // STRUCTURE
 @import 'structure/_base';

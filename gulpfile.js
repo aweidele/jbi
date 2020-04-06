@@ -26,8 +26,7 @@ var autoprefixerOptions = {
 // ];
 
 var jsQueue = [
-  'node_modules/tablesort/dist/tablesort.min.js',
-  'node_modules/tablesort/dist/tablesort.number.min.js',
+  'node_modules/owl.carousel/dist/owl.carousel.min.js',
   'src/js/*.js'
 ];
 
