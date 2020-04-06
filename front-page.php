@@ -15,5 +15,16 @@
     <?php } ?>
   </div>
 </section>
-<pre><?php print_r($content); ?></pre>
+<nav class="hp-navigation">
+  <ul>
+    <?php foreach($content['navigation'] as $nav) { ?>
+      <li>
+        <a href="<?php echo $nav['link']['title']; ?>">
+          <span><?php echo $nav['link']['title']; ?></span>
+          <img src="<?php echo $nav['image']['sizes']['proj-hero']; ?>">
+        </a>
+      </li>
+    <?php } ?>
+  </ul>
+</nav>
 <?php get_footer();

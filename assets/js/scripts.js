@@ -12,4 +12,12 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
     console.log(options);
     $(this).owlCarousel(options);
   });
+
+  // HP Nav
+  windowResize();
+
+  function windowResize() {
+    var w = $(window).width();
+
+  }
 })(jQuery);

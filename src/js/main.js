@@ -5,4 +5,12 @@
     console.log(options);
     $(this).owlCarousel(options);
   });
+
+  // HP Nav
+  windowResize();
+
+  function windowResize() {
+    var w = $(window).width();
+
+  }
 })(jQuery);
