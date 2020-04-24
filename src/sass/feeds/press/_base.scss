@@ -1,0 +1,50 @@
+.press-listing {
+  padding: 70px 0;
+
+  > div {
+    @include contentWidth;
+    @media #{$mediaTablet} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.outlet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+
+  @media #{$mediaTablet} {
+    width: 56.5%;
+  }
+
+  li {
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 12px;
+
+    @media #{$mediaTablet} {
+      flex: 0 0 33.3%;
+      width: 33.3%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid $accent-1;
+  }
+
+  span {
+    @include srOnly;
+  }
+}
+
+.articles {
+  @media #{$mediaTablet} {
+    flex: 0 0 32.2%;
+    width: 32.2%;
+  }
+}

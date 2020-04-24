@@ -29,6 +29,7 @@
     "owl.carousel": "^2.3.4"
   },
   "dependencies": {
+    "gulp-sourcemaps": "^2.6.5",
     "npm": "^6.1.0"
   }
 }

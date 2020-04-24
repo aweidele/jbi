@@ -28,6 +28,8 @@ add_image_size( 'proj-hero', 1920, 1075, true );
 add_image_size( 'proj-col-1', 580, 850, true );
 add_image_size( 'proj-col-2', 1180, 850, true );
 add_image_size( 'proj-col-3', 1788, 850, true );
+add_image_size( 'proj-col-2', 1180, 850, true );
+add_image_size( 'media-logo', 854, 570, true );
 
 // Options page
 if( function_exists('acf_add_options_page') ) {
@@ -107,5 +109,65 @@ function custom_post_type() {
               'slug' => 'projects/industry'),
         )
       );
+
+      // Press
+      	$labels = array(
+      			'name'                  => _x( 'Press', 'Post Type General Name', 'text_domain' ),
+      			'singular_name'         => _x( 'Press', 'Post Type Singular Name', 'text_domain' ),
+      			'menu_name'             => __( 'Press', 'text_domain' ),
+      			'name_admin_bar'        => __( 'Press', 'text_domain' ),
+      			'archives'              => __( 'All Press', 'text_domain' ),
+      			'attributes'            => __( '', 'text_domain' ),
+      			'parent_item_colon'     => __( '', 'text_domain' ),
+      			'all_items'             => __( 'All Press', 'text_domain' ),
+      			'add_new_item'          => __( 'Add New Press', 'text_domain' ),
+      			'add_new'               => __( 'Add New Press', 'text_domain' ),
+      			'new_item'              => __( 'New Press', 'text_domain' ),
+      			'edit_item'             => __( 'Edit Press', 'text_domain' ),
+      			'update_item'           => __( 'Update Press', 'text_domain' ),
+      			'view_item'             => __( 'View Press', 'text_domain' ),
+      			'view_items'            => __( 'View Press', 'text_domain' ),
+      			'search_items'          => __( 'Search Press', 'text_domain' ),
+      			'not_found'             => __( 'Not found', 'text_domain' ),
+      			'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+      		);
+      		$args = array(
+      			'label'                 => __( 'Press', 'text_domain' ),
+      			'description'           => __( 'Press', 'text_domain' ),
+      			'labels' => $labels,
+      	    'public' => true,
+      	    'publicly_queryable' => true,
+      	    'show_ui' => true,
+      	    'query_var' => true,
+      	    'menu_icon' => 'dashicons-admin-site-alt2',
+      	    'capability_type' => 'post',
+      	    'hierarchical' => false,
+      	    'menu_position' => null,
+      	    'supports' => array( 'title', 'custom-fields', 'editor', 'page-attributes'),
+      	    'has_archive' => true,
+      			'rewrite' => array(
+      				'slug' => 'press'),
+      		);
+      		register_post_type( 'press', $args );
+
+          register_taxonomy(
+            'outlet',
+            'press',
+            array(
+                'labels' => array(
+                    'name'              => _x( 'Media Outlets' , 'taxonomy general name' ),
+                    'singular_name'     => _x( 'Media Outlet' , 'taxonomy singular name'),
+                    'add_new_item' => 'Add Media Outlet',
+                    'new_item_name' => "New Media Outlet"
+                ),
+                'show_ui' => true,
+                'show_admin_column' => true,
+                'show_tagcloud' => false,
+                'hierarchical' => true,
+                'support' => array('tags'),
+                'rewrite' => array(
+                  'slug' => 'press/outlet'),
+            )
+          );
 }
 add_action( 'init', 'custom_post_type', 0 );
