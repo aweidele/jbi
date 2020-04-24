@@ -8,15 +8,43 @@
       justify-content: space-between;
     }
   }
+
+  .articles {
+    font-size: 18px;
+    article {
+      margin-bottom: 1.4em;
+      span {
+        display: block;
+      }
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+
+      @include hover {
+        span:last-child {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .outlet-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -12px;
-
   @media #{$mediaTablet} {
     width: 56.5%;
+
+    nav {
+      position: sticky;
+      top: $headerHeight;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
   }
 
   li {
