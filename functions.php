@@ -171,3 +171,20 @@ function custom_post_type() {
           );
 }
 add_action( 'init', 'custom_post_type', 0 );
+
+// QUERY MODIFICATION
+function modify_query( $query ) {
+  if (
+      ( $query->is_tax('outlet') )
+      && $query->is_main_query()
+      && !is_admin()
+  ) {
+    $query->query_vars['posts_per_page'] = -1;
+    $query->query_vars['orderby'] = 'meta_value_num';
+		$query->query_vars['meta_key'] = 'date';
+		$query->query_vars['order']	= 'DESC';
+  }
+
+
+}
+add_action( 'pre_get_posts', 'modify_query' );

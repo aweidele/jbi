@@ -4,18 +4,19 @@
     'taxonomy' => 'outlet',
     'hide_empty' => false,
   ) );
+  $current = get_queried_object();
 ?>
 <div class="press-listing">
   <div>
-    <div class="outlet-grid">
+    <div class="outlet-grid tax-archive">
       <nav>
         <ul>
         <?php
           foreach($terms as $term) {
             $logo = get_field('logo', $term);
         ?>
-          <li>
-            <a href="<?php echo get_term_link($term); ?>">
+          <li id="<?php echo $term->slug; ?>"<?php if( $term->slug == $current->slug ) { ?> class="active"<?php } ?>>
+            <a href="<?php echo get_term_link($term); ?>"<?php if( $term->slug == $current->slug ) { ?> disabled<?php } ?>>
               <img src="<?php echo $logo['sizes']['media-logo']; ?>">
               <span><?php echo $term->name; ?></span>
             </a>

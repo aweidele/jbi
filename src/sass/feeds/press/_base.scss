@@ -62,11 +62,34 @@
     width: 100%;
     height: auto;
     display: block;
-    border: 1px solid $accent-1;
   }
 
   span {
     @include srOnly;
+  }
+
+  a {
+    transition: all .5s;
+    display: block;
+    border: 1px solid $accent-1;
+
+    @include hover {
+      opacity: .25;
+    }
+  }
+
+  &.tax-archive {
+    a {
+      opacity: .25;
+
+      @include hover {
+        opacity: .75;
+      }
+    }
+
+    li.active a {
+      opacity: 1;
+    }
   }
 }
 
