@@ -8,7 +8,7 @@ body {
      }
 
      .main-header {
-       background-color: transparent;
+       background: transparent;
        > div {
          position: relative;
          z-index: 1;
@@ -37,4 +37,5 @@ body {
 @import 'copy/_base';
 @import 'header/_header';
 @import 'footer/_footer';
+@import '_page';
 @import '_front-page';

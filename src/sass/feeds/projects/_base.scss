@@ -42,38 +42,6 @@
   > div {
     @include contentWidth;
   }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
-.project-main-inner {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0 -12px;
-
-  [class^="col"] {
-    padding: 12px;
-  }
-}
-
-.col-1 {
-  width: 33.33%;
-  flex: 0 0 33.33%;
-}
-
-.col-2 {
-  width: 66.67%;
-  flex: 0 0 66.67%;
-}
-
-.col-3 {
-  width: 100%;
-  flex: 0 0 100%;
 }
 
 // PROJECT GRID

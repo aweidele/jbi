@@ -1,0 +1,10 @@
+body.page {
+  > main {
+    padding: 70px 0;
+    > section {
+      > div {
+        @include contentWidth;
+      }
+    }
+  }
+}
