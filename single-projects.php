@@ -35,7 +35,7 @@
             <picture>
               <img src="<?php echo $thumb['sizes']['proj-thumb']; ?>" alt="<?php echo $thumb['alt']; ?>">
             </picture>
-            <div class="project-title">
+            <div class="grid-title">
               <h4 class="h3"><?php echo $project->post_title; ?></h4>
               <small><?php echo $location; ?></small>
             </div>

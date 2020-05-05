@@ -23,5 +23,21 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 })(jQuery);
 
 (function($) {
+  $('.people-grid article').on('click',function() {
+    $('.people-grid article').each(function() {
+      $(this).removeClass('open');
+    });
+
+    $(this).addClass('open');
+  });
+
+  $('.people-grid article button').on('click',function() {
+    $('.people-grid article').each(function() {
+      $(this).removeClass('open');
+    });
+  });
+})(jQuery);
+
+(function($) {
   
 })(jQuery);

@@ -11,30 +11,24 @@
     display: block;
   }
 
-  .project-title {
-    padding-bottom: 38px;
-    color: $white;
-
-    small {
-      font-size: 24px;
-    }
-
-    > div {
-      @include contentWidth;
-    }
+  > div {
+    @include contentWidth;
   }
 }
 
-.project-title {
+.grid-title {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+  padding-bottom: 38px;
+  color: $white;
 
   small {
     font-family: $headingFF;
     line-height: (40 / 30) * 1em;
     font-weight: $bold;
+    font-size: 24px;
   }
 }
 
@@ -80,7 +74,7 @@
     font-size: 21px;
   }
 
-  .project-title {
+  .grid-title {
     padding-bottom: 48px;
   }
 

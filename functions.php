@@ -169,6 +169,45 @@ function custom_post_type() {
                   'slug' => 'outlet'),
             )
           );
+
+          $labels = array(
+        			'name'                  => _x( 'People', 'Post Type General Name', 'text_domain' ),
+        			'singular_name'         => _x( 'People', 'Post Type Singular Name', 'text_domain' ),
+        			'menu_name'             => __( 'People', 'text_domain' ),
+        			'name_admin_bar'        => __( 'People', 'text_domain' ),
+        			'archives'              => __( 'All People', 'text_domain' ),
+        			'attributes'            => __( '', 'text_domain' ),
+        			'parent_item_colon'     => __( '', 'text_domain' ),
+        			'all_items'             => __( 'All People', 'text_domain' ),
+        			'add_new_item'          => __( 'Add New People', 'text_domain' ),
+        			'add_new'               => __( 'Add New People', 'text_domain' ),
+        			'new_item'              => __( 'New People', 'text_domain' ),
+        			'edit_item'             => __( 'Edit People', 'text_domain' ),
+        			'update_item'           => __( 'Update People', 'text_domain' ),
+        			'view_item'             => __( 'View People', 'text_domain' ),
+        			'view_items'            => __( 'View People', 'text_domain' ),
+        			'search_items'          => __( 'Search People', 'text_domain' ),
+        			'not_found'             => __( 'Not found', 'text_domain' ),
+        			'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+        		);
+        		$args = array(
+        			'label'                 => __( 'People', 'text_domain' ),
+        			'description'           => __( 'People', 'text_domain' ),
+        			'labels' => $labels,
+        	    'public' => true,
+        	    'publicly_queryable' => true,
+        	    'show_ui' => true,
+        	    'query_var' => true,
+        	    'menu_icon' => 'dashicons-groups',
+        	    'capability_type' => 'post',
+        	    'hierarchical' => false,
+        	    'menu_position' => null,
+        	    'supports' => array( 'title', 'custom-fields', 'editor', 'page-attributes'),
+        	    'has_archive' => true,
+        			'rewrite' => array(
+        				'slug' => 'people'),
+        		);
+        		register_post_type( 'people', $args );
 }
 add_action( 'init', 'custom_post_type', 0 );
 

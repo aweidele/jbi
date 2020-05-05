@@ -1,0 +1,82 @@
+.people > main {
+  padding: 70px 0;
+}
+.people-grid {
+  > div {
+    @include contentWidth;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  article {
+    padding: 12px;
+    width: 33.33%;
+    flex: 0 0 33.33%;
+    position: relative;
+
+    &:nth-child(3n + 2) {
+      transform: translateY(-70px);
+    }
+  }
+}
+
+.people-grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -12px;
+  padding: 68px 0 70px;
+}
+
+.people-bio {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding: 12px;
+  display: none;
+
+  p {
+    color: $white;
+    font-size: 21px;
+    line-height: (27 / 21) * 1em;
+  }
+
+  > div {
+    background: $primary;
+    padding: 18px;
+  }
+}
+
+.people-grid article {
+  &:nth-child(3n),
+  &:nth-child(3n+1) {
+    .people-bio {
+      top: -70px;
+    }
+  }
+
+  &:nth-child(3n+2) {
+    .people-bio {
+      top: 70px;
+    }
+  }
+
+  &:nth-child(3n) {
+    .people-bio {
+      left: auto;
+      right: 100%;
+    }
+  }
+  &.open {
+    z-index: 10;
+
+    .people-bio {
+      display: block;
+    }
+  }
+}
