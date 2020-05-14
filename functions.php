@@ -224,6 +224,10 @@ function modify_query( $query ) {
 		$query->query_vars['order']	= 'DESC';
   }
 
-
+  if (
+    is_post_type_archive('projects')
+  ) {
+    $query->query_vars['posts_per_page'] = -1;
+  }
 }
 add_action( 'pre_get_posts', 'modify_query' );
