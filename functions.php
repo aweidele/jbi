@@ -106,7 +106,7 @@ function custom_post_type() {
             'hierarchical' => true,
             'support' => array('tags'),
             'rewrite' => array(
-              'slug' => 'projects/industry'),
+              'slug' => 'industry'),
         )
       );
 

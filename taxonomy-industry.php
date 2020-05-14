@@ -11,8 +11,8 @@
             <picture>
               <img src="<?php echo $content['thumbnail']['sizes']['proj-thumb']; ?>" alt="<?php echo $content['thumbnail']['alt']; ?>">
             </picture>
-            <div class="project-title">
-              <h4 class="h2"><?php the_title(); ?></h4>
+            <div class="grid-title">
+              <h4 class="h3"><?php the_title(); ?></h4>
               <small><?php echo $content['location']; ?></small>
             </div>
           </a>
