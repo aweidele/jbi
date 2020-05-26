@@ -18,6 +18,9 @@
         case 'section':
           include 'inc/section.php';
           break;
+        case 'news':
+          include 'inc/news.php';
+          break;
       } ?>
     </div>
   </section>

@@ -9,7 +9,7 @@
   ];
 ?>
 <section class="hp-slideshow">
-  <div class="owl-carousel" data-options='<?php echo json_encode($owl); ?>'>
+  <div class="owl-carousel js-carousel" data-options='<?php echo json_encode($owl); ?>'>
     <?php foreach($content['slideshow'] as $slide) { ?>
       <div><img src="<?php echo $slide['sizes']['proj-hero']; ?>"></div>
     <?php } ?>
