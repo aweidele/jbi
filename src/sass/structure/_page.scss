@@ -5,6 +5,18 @@ body.page:not(.front-page) {
       > div {
         @include contentWidth;
       }
+
+      color: $primary;
+
+      &.bg-primary {
+        background: $primary;
+        color: $white;
+        padding: 60px 0;
+      }
     }
   }
+}
+
+.section-inner {
+  padding: 0 20px;
 }
