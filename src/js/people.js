@@ -1,5 +1,6 @@
 (function($) {
-  $('.people-grid article a').on('click',function(s) {
+  $('.people-grid article a').on('click',function(e) {
+    e.preventDefault();
     $('.people-grid article').each(function() {
       $(this).removeClass('open');
     });

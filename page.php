@@ -12,6 +12,9 @@
           $grid = $c['grid'];
           include 'inc/grid.php';
           break;
+        case 'people':
+          include 'inc/people.php';
+          break;
       } ?>
     </div>
   </section>

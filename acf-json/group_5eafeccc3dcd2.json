@@ -46,9 +46,18 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5ecc645918a17": {
+                    "key": "layout_5ecc645918a17",
+                    "name": "people",
+                    "label": "People",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add Section",
             "min": "",
             "max": ""
         }
@@ -72,5 +81,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1588587843
+    "modified": 1590453356
 }

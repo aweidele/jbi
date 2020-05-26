@@ -1,9 +1,15 @@
-<?php get_header(); ?>
+<?php
+  $args = [
+    'post_type'=>'people',
+    'posts_per_page'=>'-1'
+  ];
+  $people = new WP_Query($args);
+?>
 <div class="people-grid">
   <div>
     <div class="people-grid-inner">
       <?php
-      if( have_posts() ) : while( have_posts() ) : the_post();
+      if( $people->have_posts() ) : while( $people->have_posts() ) : $people->the_post();
         $content = get_fields();
       ?>
       <article id="<?php echo $post->post_name; ?>">
@@ -32,4 +38,3 @@
     </div>
   </div>
 </div>
-<?php get_footer(); ?>

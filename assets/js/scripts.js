@@ -23,7 +23,8 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 })(jQuery);
 
 (function($) {
-  $('.people-grid article a').on('click',function(s) {
+  $('.people-grid article a').on('click',function(e) {
+    e.preventDefault();
     $('.people-grid article').each(function() {
       $(this).removeClass('open');
     });

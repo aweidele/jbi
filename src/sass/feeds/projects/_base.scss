@@ -21,8 +21,9 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-bottom: 38px;
+  padding: 0 24px 38px 24px;
   color: $white;
+  transition: all .25s;
 
   small {
     font-family: $headingFF;
