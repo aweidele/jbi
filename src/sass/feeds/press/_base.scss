@@ -33,7 +33,7 @@
 
 .outlet-grid {
   @media #{$mediaTablet} {
-    width: 56.5%;
+    width: 75%;
 
     nav {
       position: sticky;
@@ -53,8 +53,8 @@
     padding: 12px;
 
     @media #{$mediaTablet} {
-      flex: 0 0 33.3%;
-      width: 33.3%;
+      flex: 0 0 25%;
+      width: 25%;
     }
   }
 
@@ -95,8 +95,8 @@
 
 .articles {
   @media #{$mediaTablet} {
-    flex: 0 0 32.2%;
-    width: 32.2%;
+    flex: 0 0 20%;
+    width: 20%;
   }
 }
 
