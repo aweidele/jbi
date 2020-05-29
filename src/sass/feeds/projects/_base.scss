@@ -11,8 +11,28 @@
     display: block;
   }
 
-  > div {
-    @include contentWidth;
+  .project-title {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: $white;
+    text-shadow: 0 0 2px $black;
+    padding-bottom: 45px;
+
+    span,
+    small {
+      display: block;
+    }
+
+    small {
+      font-size: 1em;
+      text-transform: none;
+    }
+
+    > div {
+      @include contentWidth;
+    }
   }
 }
 
@@ -122,3 +142,13 @@
     margin: 0 -12px;
   }
 }
+
+
+// @keyframes wee {
+//   0% { transform: rotate(0deg);}
+//   100% { transform: rotate(360deg);}
+// }
+//
+// body {
+//   animation: wee 10s infinite linear;
+// }

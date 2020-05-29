@@ -10,8 +10,10 @@
     </picture>
     <div class="project-title">
       <div>
-        <h2><?php the_title(); ?></h2>
-        <small><?php echo $content['location']; ?></small>
+        <h2>
+          <span><?php the_title(); ?></span>
+          <small><?php echo $content['location']; ?></small>
+        </h2>
       </div>
     </div>
   </header>
