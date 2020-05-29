@@ -12,7 +12,7 @@
             <img src="<?php echo $content['photo']['sizes']['proj-thumb']; ?>" alt="<?php echo $content['thumbnail']['alt']; ?>">
           </picture>
           <div class="grid-title">
-            <h4 class="h3"><?php the_title(); ?></h4>
+            <h4><?php the_title(); ?></h4>
             <small><?php echo $content['title']; ?></small>
           </div>
         </a>

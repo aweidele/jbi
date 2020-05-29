@@ -17,14 +17,8 @@
   }
 
   article {
-    padding: 12px;
-    width: 33.33%;
-    flex: 0 0 33.33%;
     position: relative;
-
-    &:nth-child(3n + 2) {
-      transform: translateY(-70px);
-    }
+    padding: 6px;
 
     a {
       @include hover {
@@ -33,15 +27,40 @@
         }
       }
     }
+
+    @media #{$mediaTablet} {
+      width: 33.33%;
+      flex: 0 0 33.33%;
+    }
+
+    @media #{$mediaDesktop} {
+      padding: 12px;
+    }
+
+    &:nth-child(3n + 2) {
+      @media #{$mediaTablet} {
+        transform: translateY(-35px);
+      }
+      @media #{$mediaDesktop} {
+        transform: translateY(-70px);
+      }
+    }
   }
 }
 
 .people-grid-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0 -12px;
   padding: 68px 0 70px;
+  margin: 0 -6px;
+
+  @media #{$mediaTablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media #{$mediaDesktop} {
+    margin: 0 -12px;
+  }
 }
 
 .people-bio {

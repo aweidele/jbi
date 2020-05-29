@@ -26,11 +26,20 @@
   transition: all .25s;
   text-shadow: 0px 0px 2px $black;
 
+  h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @media #{$mediaDesktop} {
+      font-size: 30px;
+    }
+  }
+
   small {
     font-family: $headingFF;
     line-height: (40 / 30) * 1em;
     font-weight: $bold;
-    font-size: 24px;
+    font-size: (30 / 24) * 1em;
   }
 }
 
@@ -57,12 +66,24 @@
   }
 
   article {
-    padding: 12px;
-    width: 33.33%;
-    flex: 0 0 33.33%;
+    padding: 6px;
+
+    @media #{$mediaTablet} {
+      width: 33.33%;
+      flex: 0 0 33.33%;
+    }
+
+    @media #{$mediaDesktop} {
+      padding: 12px;
+    }
 
     &:nth-child(3n + 2) {
-      transform: translateY(-70px);
+      @media #{$mediaTablet} {
+        transform: translateY(-35px);
+      }
+      @media #{$mediaDesktop} {
+        transform: translateY(-70px);
+      }
     }
   }
 
@@ -87,10 +108,17 @@
 }
 
 .project-grid-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0 -12px;
   padding: 68px 0 70px;
   text-align: center;
+  margin: 0 -6px;
+
+  @media #{$mediaTablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media #{$mediaDesktop} {
+    margin: 0 -12px;
+  }
 }
