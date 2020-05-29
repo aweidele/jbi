@@ -19,6 +19,9 @@
   </div>
 <?php
         break;
+      case 'map':
+        include('map.php');
+        break;
     }
   }
 ?>
