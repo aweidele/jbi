@@ -69,6 +69,16 @@
   }
 }
 
+.project-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+
+  dt {
+    text-transform: uppercase;
+  }
+}
+
 // PROJECT GRID
 .related-projects {
   padding: 70px 0;

@@ -1,8 +1,15 @@
 <?php
-  $content = get_fields();
-  $grid = $content['grid'];
   get_header();
   if( have_posts() ) : while( have_posts() ) : the_post();
+    $content = get_fields();
+    $grid = $content['grid'];
+    if( $grid[0]['acf_fc_layout'] == 'text_block' ) {
+      $grid[0]['text'] .= '<dl class="project-stats">';
+      if( $content['photo_credit'] ) {
+        $grid[0]['text'] .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
+      }
+      $grid[0]['text'] .= '</dl>';
+    }
 ?>
   <header class="project-hero">
     <picture>
