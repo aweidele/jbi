@@ -20,7 +20,12 @@
 <?php
         break;
       case 'map':
-        include('map.php');
+?>
+  <div class="<?php echo $item['width']; ?>">
+    <h5>Map</h5>
+      <?php include('map.php'); ?>
+  </div>
+<?php
         break;
     }
   }
