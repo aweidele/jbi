@@ -30,6 +30,54 @@
             "mime_types": ""
         },
         {
+            "key": "field_5ed075131978d",
+            "label": "Slideshow Autoplay",
+            "name": "slideshow_autoplay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ed075301978e",
+            "label": "Slideshow Autoplay Timeout",
+            "name": "slideshow_autoplay_timeout",
+            "type": "number",
+            "instructions": "1000 = 1 second",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ed075131978d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
             "key": "field_5e8a6f8925553",
             "label": "Navigation",
             "name": "navigation",
@@ -109,5 +157,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1586130913
+    "modified": 1590719842
 }

@@ -31,11 +31,22 @@ nav {
         letter-spacing: 1.13px;
       }
 
-      @include hover {
-        @media #{$mediaDesktop} {
+      @media #{$mediaDesktop} {
+        &:hover,
+        &.current-menu-item,
+        &.current-menu-ancestor {
           .sub-menu {
             display: flex;
           }
+        }
+      }
+    }
+
+    li {
+      &.current-menu-item,
+      &.current-menu-ancestor {
+        > a {
+          font-weight: 800;
         }
       }
     }

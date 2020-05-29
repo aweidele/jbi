@@ -5,8 +5,13 @@
   $owl = [
     "loop" => true,
     "items" => 1,
-    "nav" => true
+    "nav" => true,
   ];
+
+  if( $content['slideshow_autoplay'] ) {
+    $owl["autoplay"] = true;
+    $owl["autoplayTimeout"] = $content['slideshow_autoplay_timeout'];
+  }
 ?>
 <section class="hp-slideshow">
   <div class="owl-carousel js-carousel" data-options='<?php echo json_encode($owl); ?>'>
