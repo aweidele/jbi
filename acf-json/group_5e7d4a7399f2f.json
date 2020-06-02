@@ -197,6 +197,25 @@
                             "layout": "block",
                             "prefix_label": 0,
                             "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5ed5ba6f09c6a",
+                            "label": "Map Embed",
+                            "name": "map_embed",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
                         }
                     ],
                     "min": "",
@@ -254,5 +273,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1590752462
+    "modified": 1591065223
 }

@@ -1,3 +1,5 @@
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2089451015045!2d-74.01411978459502!3d40.71341657933181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1b5a51b547%3A0x6c7a4f9144ad44!2s7%20World%20Trade%20Center%2C%20250%20Greenwich%20St%20FLOOR%2033%2C%20New%20York%2C%20NY%2010006!5e0!3m2!1sen!2sus!4v1591065157400!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<?php /*
 <?php
   $r = rand();
 ?>
@@ -95,3 +97,4 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8TwvpI2BImb_RokYJcgnFXFSxB3DKlGI&callback=initMap"
     async defer></script>
+*/ ?>

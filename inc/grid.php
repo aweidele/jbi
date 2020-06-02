@@ -22,8 +22,9 @@
       case 'map':
 ?>
   <div class="<?php echo $item['width']; ?>">
-    <h5>Map</h5>
+    <div class="map">
       <?php include('map.php'); ?>
+    </div>
   </div>
 <?php
         break;
