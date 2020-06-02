@@ -55,6 +55,26 @@
       }
     }
   }
+
+  .scroll-down {
+    width: 18px;
+    height: 37px;
+    position: absolute;
+    bottom: $gutter;
+    left: calc(50% - 18px);
+    z-index: 10;
+    background-image: url('../images/arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .25s;
+    transform: rotate(90deg);
+    overflow: hidden;
+    text-indent: -999999px;
+
+    @include hover {
+      opacity: .5;
+    }
+  }
 }
 
 .hp-navigation {
