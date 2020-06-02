@@ -5,7 +5,7 @@
   $owl = [
     "loop" => true,
     "items" => 1,
-    "nav" => true,
+    "nav" => true
   ];
 
   if( $content['slideshow_autoplay'] ) {

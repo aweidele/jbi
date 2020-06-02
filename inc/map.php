@@ -1,7 +1,13 @@
+<?php
+  $r = rand();
+?>
+<div class="map-wrapper">
+  <div id="map-<?php echo $r; ?>"></div>
+</div>
 <script>
       function initMap() {
         // Styles a map in night mode.
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('map-<?php echo $r; ?>'), {
           center: {lat: 40.674, lng: -73.945},
           zoom: 12,
           styles: [
@@ -87,5 +93,5 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8TwvpI2BImb_RokYJcgnFXFSxB3DKlGI&callback=initMap"
     async defer></script>
