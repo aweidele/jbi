@@ -4,11 +4,23 @@
     $content = get_fields();
     $grid = $content['grid'];
     if( $grid[0]['acf_fc_layout'] == 'text_block' ) {
-      $grid[0]['text'] .= '<dl class="project-stats">';
-      if( $content['photo_credit'] ) {
-        $grid[0]['text'] .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
+      if(
+        $content['photo_credit'] ||
+        $content['size'] ||
+        $content['scope']
+      ) {
+        $grid[0]['text'] .= '<dl class="project-stats">';
+        if( $content['photo_credit'] ) {
+          $grid[0]['text'] .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
+        }
+        if( $content['size'] ) {
+          $grid[0]['text'] .= '<dt>Size</dt><dd>'.$content['size'].'</dd>';
+        }
+        if( $content['scope'] ) {
+          $grid[0]['text'] .= '<dt>Scope</dt><dd>'.$content['scope'].'</dd>';
+        }
+        $grid[0]['text'] .= '</dl>';
       }
-      $grid[0]['text'] .= '</dl>';
     }
 ?>
   <header class="project-hero">
