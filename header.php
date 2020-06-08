@@ -42,7 +42,8 @@
         <?php
           wp_nav_menu(
             array(
-              'theme_location' => 'primary-menu'
+              'theme_location' => 'primary-menu',
+              'walker' => new JBI_Walker()
             )
           ); ?>
       </nav>

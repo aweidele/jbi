@@ -28,6 +28,17 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
   function windowResize() {
     var w = $(window).width();
   }
+
+  // Mobile Nav
+  $('.nav-primary .menu > li > button').on('click',function() {
+    var item = $(this).parent();
+    item.siblings().removeClass('current-menu-item');
+    if(item.hasClass('current-menu-item')) {
+      item.removeClass('current-menu-item');
+    } else {
+      item.addClass('current-menu-item');
+    }
+  });
 })(jQuery);
 
 (function($) {

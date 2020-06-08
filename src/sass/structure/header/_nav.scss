@@ -20,6 +20,87 @@ nav {
     margin: 0 -12px;
   }
 
+  @media #{$mediaToggleHeader} {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    padding: 20px;
+    font-size: 24px;
+
+    > div {
+      height: 100%;
+      overflow: auto;
+    }
+
+    .sub-menu {
+      display: none;
+      width: 100%;
+      font-size: 18px;
+
+      a,
+      span {
+        display: block;
+        padding: 5px 10px;
+      }
+    }
+
+    .menu {
+      > li {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px 0;
+
+        > a {
+          flex-grow: 1;
+        }
+
+        > button {
+          width: 32px;
+          height: 32px;
+          position: relative;
+          background-color: transparent;
+          border: 0;
+
+          &:before,
+          &:after {
+            width: 16px;
+            height: 2px;
+            position: absolute;
+            top: 15px;
+            left: 8px;
+            content: "";
+            background: $primary;
+            transition: all .25s;
+          }
+
+          &:after {
+            transform: rotate(90deg);
+          }
+
+          span {
+            @include srOnly;
+          }
+        }
+
+        &.current-menu-item {
+          > button {
+            &:after {
+              transform: rotate(0deg);
+            }
+          }
+
+          .sub-menu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
   ul.menu {
     @media #{$mediaDesktop} {
       display: flex;
@@ -62,8 +143,9 @@ nav {
       right: 0;
       min-width: 100%;
 
-      a {
-        padding-top: 10px;
+      a,
+      span {
+        padding: 10px 12px 0;
         display: block;
       }
     }

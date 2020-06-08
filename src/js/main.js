@@ -21,4 +21,15 @@
   function windowResize() {
     var w = $(window).width();
   }
+
+  // Mobile Nav
+  $('.nav-primary .menu > li > button').on('click',function() {
+    var item = $(this).parent();
+    item.siblings().removeClass('current-menu-item');
+    if(item.hasClass('current-menu-item')) {
+      item.removeClass('current-menu-item');
+    } else {
+      item.addClass('current-menu-item');
+    }
+  });
 })(jQuery);

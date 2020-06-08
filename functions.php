@@ -231,3 +231,42 @@ function modify_query( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'modify_query' );
+
+
+/**** Navigation ****/
+class JBI_Walker extends Walker_Nav_Menu {
+
+  function start_el(&$output, $item, $depth=0, $args=array(), $id = 0) {
+    $object = $item->object;
+    $type = $item->type;
+    $title = $item->title;
+    $description = $item->description;
+    $permalink = $item->url;
+
+    $output .= "<li class='" .  implode(" ", $item->classes) . "'>";
+
+    //Add SPAN if no Permalink
+    if( $permalink && $permalink != '#' ) {
+      $output .= '<a href="' . $permalink . '">';
+    } else {
+      $output .= '<span>';
+    }
+
+    $output .= $title;
+    //
+    // if( $description != '' && $depth == 0 ) {
+    //   $output .= '<small class="description">' . $description . '</small>';
+    // }
+    // echo '<pre>',print_r($args),'</pre>';
+
+    if( $permalink && $permalink != '#' ) {
+      $output .= '</a>';
+    } else {
+      $output .= '</span>';
+    }
+
+    if( $depth == 0 && $args->walker->has_children) {
+      $output .= '<button><span>Expand</span></button>';
+    }
+  }
+}
