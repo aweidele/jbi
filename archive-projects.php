@@ -13,7 +13,7 @@
             </picture>
             <div class="grid-title">
               <h4><?php the_title(); ?></h4>
-              <small><?php echo $content['location']; ?></small>
+              <!-- <small><?php echo $content['location']; ?></small> -->
             </div>
           </a>
         </article>
