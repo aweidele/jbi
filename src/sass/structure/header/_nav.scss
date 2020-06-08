@@ -24,11 +24,13 @@ nav {
     position: fixed;
     top: 0;
     left: 100%;
+    z-index: 10;
     width: 100vw;
     height: 100vh;
     background: $white;
-    padding: 20px;
-    font-size: 24px;
+    padding: 60px 20px;
+    font-size: 18px;
+    transition: all .25s;
 
     > div {
       height: 100%;
@@ -38,7 +40,7 @@ nav {
     .sub-menu {
       display: none;
       width: 100%;
-      font-size: 18px;
+      font-size: 14px;
 
       a,
       span {

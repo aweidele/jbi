@@ -39,6 +39,9 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
       item.addClass('current-menu-item');
     }
   });
+  $('.hamburger').on('click',function() {
+    $(this).toggleClass('open');
+  });
 })(jQuery);
 
 (function($) {

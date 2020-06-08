@@ -32,4 +32,7 @@
       item.addClass('current-menu-item');
     }
   });
+  $('.hamburger').on('click',function() {
+    $(this).toggleClass('open');
+  });
 })(jQuery);

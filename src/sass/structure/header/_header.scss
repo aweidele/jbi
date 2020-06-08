@@ -11,19 +11,76 @@
     top: 32px;
   }
 
+  h1 {
+    position: relative;
+    z-index: 20;
+  }
+
   > div {
     @include contentWidth;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
     @media #{$mediaTablet} {
-      display: flex;
       align-items: flex-end;
-      justify-content: space-between;
-      padding-top: 10px;
     }
   }
   button {
     @media #{$mediaDesktop} {
       display: none;
+    }
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-color: transparent;
+    z-index: 20;
+
+    span {
+
+    }
+
+    &:before,
+    &:after,
+    span {
+      width: 16px;
+      height: 2px;
+      position: absolute;
+      top: 15px;
+      left: 8px;
+      content: "";
+      background: $primary;
+      transition: all .25s;
+      text-indent: -999999px;
+    }
+
+    &:before {
+      transform: translateY(-6px);
+    }
+    &:after {
+      transform: translateY(6px);
+    }
+
+    &.open {
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+      span {
+        opacity: 0;
+      }
+
+      @media #{$mediaToggleHeader} {
+        + nav {
+          transform: translate(-100%);
+        }
+      }
     }
   }
   h1 {
