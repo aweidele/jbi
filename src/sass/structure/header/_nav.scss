@@ -9,6 +9,7 @@ nav {
 
     @include hover {
       color: $secondary;
+      //text-decoration: none;
     }
 
     @media #{$mediaDesktop} {

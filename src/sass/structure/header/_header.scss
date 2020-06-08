@@ -16,8 +16,9 @@
 
     @media #{$mediaTablet} {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
+      padding-top: 10px;
     }
   }
   button {
@@ -35,7 +36,6 @@
 
     @include hover {
       color: $secondary;
-      text-decoration: underline;
     }
   }
 
