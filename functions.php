@@ -225,7 +225,10 @@ function modify_query( $query ) {
   }
 
   if (
-    is_post_type_archive('projects')
+    ( is_post_type_archive('projects')
+      || $query->is_tax('industry')
+    )
+    && $query->is_main_query()
   ) {
     $query->query_vars['posts_per_page'] = -1;
   }
