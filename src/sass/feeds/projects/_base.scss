@@ -139,7 +139,7 @@
 }
 
 .project-grid-inner {
-  padding: 68px 0 70px;
+  padding: 0 0 70px;
   text-align: center;
   margin: 0 -6px;
 
@@ -147,10 +147,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-top: 70px;
   }
 
   @media #{$mediaDesktop} {
     margin: 0 -12px;
+    padding-top: 35px;
+  }
+
+  @media #{$mediaFull} {
+    margin: 0 60px;
   }
 }
 

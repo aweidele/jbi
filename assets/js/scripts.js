@@ -41,6 +41,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
   });
   $('.hamburger').on('click',function() {
     $(this).toggleClass('open');
+    $(this).parent().toggleClass('open');
   });
 })(jQuery);
 

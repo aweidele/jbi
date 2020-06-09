@@ -23,13 +23,45 @@ body {
          content: "";
          background: linear-gradient(0deg,rgba($black,0) 0%, rgba($black,.3) 100%);
        }
-       a {
+
+       h1 a {
          color: $white;
 
          @include hover {
            color: rgba($white,.4);
          }
        }
+
+       @media #{$mediaToggleHeader} {
+          .open h1 a {
+            color: $primary;
+
+            @include hover {
+              color: rgba($primary,.4);
+            }
+          }
+       }
+
+       @media #{$mediaDesktop} {
+         a,
+         span {
+           color: $white;
+
+           @include hover {
+             color: rgba($white,.4);
+           }
+         }
+       }
+
+       .hamburger:not(.open) {
+         span,
+         &:before,
+         &:after {
+           background: $white;
+         }
+       }
+
+
      }
    }
 }
