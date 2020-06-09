@@ -25,4 +25,8 @@ body:not(.front-page) {
 
 .section-inner {
   padding: 0 20px;
+
+  @media #{$mediaDesktop} {
+    padding: 0 92px;
+  }
 }
