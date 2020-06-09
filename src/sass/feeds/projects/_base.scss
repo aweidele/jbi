@@ -162,12 +162,8 @@
   }
 
   @media #{$mediaDesktop} {
-    margin: 0 -12px;
-    padding-top: 35px;
-  }
-
-  @media #{$mediaFull} {
     margin: 0 60px;
+    padding-top: 35px;
   }
 }
 
