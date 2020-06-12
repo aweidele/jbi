@@ -48,7 +48,10 @@
       </div>
     </div>
   </footer>
+  <?php /*
   <!-- pre><?php print_r($social); ?></pre -->
+  <div class="feedback"></div>
+  */ ?>
 <?php wp_footer(); ?>
 </body>
 </html>

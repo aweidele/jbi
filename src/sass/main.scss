@@ -18,3 +18,14 @@
 @import 'feeds/projects/_base';
 @import 'feeds/press/_base';
 @import 'feeds/people/_base';
+
+.feedback {
+  font-size: 11px;
+  background: rgba($primary,.8);
+  color: $white;
+  padding: 5px;
+  position: fixed;
+  z-index: 9999;
+  right: 10px;
+  bottom: 10px;
+}

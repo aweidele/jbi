@@ -119,11 +119,12 @@
         height: 103%;
       }
     }
+  }
 
-    &:hover {
-      img {
-        filter: blur(0);
-      }
+
+  .active a {
+    img {
+      filter: blur(0);
     }
   }
 }
