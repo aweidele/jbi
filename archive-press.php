@@ -7,6 +7,9 @@
 ?>
 <div class="press-listing">
   <div>
+    <div class="articles">
+
+    </div>
     <div class="outlet-grid">
       <nav>
         <ul>
@@ -23,9 +26,6 @@
         <?php } ?>
         </ul>
       </nav>
-    </div>
-    <div class="articles">
-      
     </div>
   </div>
 </div>

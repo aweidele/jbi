@@ -3,9 +3,12 @@
 
   > div {
     @include contentWidth;
+    display: flex;
+    flex-direction: column;
+    
     @media #{$mediaTablet} {
-      display: flex;
       justify-content: space-between;
+      flex-direction: row-reverse;
     }
   }
 
@@ -13,6 +16,9 @@
     font-size: 18px;
     article {
       margin-bottom: 1.4em;
+      .date {
+        font-family: $headingFF;
+      }
       span {
         display: block;
       }

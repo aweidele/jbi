@@ -8,6 +8,26 @@
 ?>
 <div class="press-listing">
   <div>
+    <div class="articles">
+      <div class="articles-container">
+      <?php
+        if( have_posts() ) : while( have_posts() ) : the_post();
+          $fields = get_fields();
+          if($fields['file']) {
+            $link = $fields['file']['url'];
+          } else {
+            $link = $fields['article_link']['url'];
+          }
+      ?>
+        <article id="<?php echo $post->post_name; ?>">
+          <a href="<?php echo $link; ?>" target="_blank">
+            <span class="date"><?php echo $fields['date']; ?></span>
+            <span><?php the_title(); ?></span>
+          </a>
+        </article>
+      <?php endwhile; endif; ?>
+      </div>
+    </div>
     <div class="outlet-grid tax-archive">
       <nav>
         <ul>
@@ -24,26 +44,6 @@
         <?php } ?>
         </ul>
       </nav>
-    </div>
-    <div class="articles">
-      <div class="articles-container">
-      <?php
-        if( have_posts() ) : while( have_posts() ) : the_post();
-          $fields = get_fields();
-          if($fields['file']) {
-            $link = $fields['file']['url'];
-          } else {
-            $link = $fields['article_link']['url'];
-          }
-      ?>
-        <article id="<?php echo $post->post_name; ?>">
-          <a href="<?php echo $link; ?>" target="_blank">
-            <span><?php echo $fields['date']; ?></span>
-            <span><?php the_title(); ?></span>
-          </a>
-        </article>
-      <?php endwhile; endif; ?>
-      </div>
     </div>
   </div>
 </div>
