@@ -1,4 +1,4 @@
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.210540939664!2d-74.01416284889453!3d40.713381445366274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19f4cbcd4d%3A0xa83e55ead11574c!2s7%20World%20Trade%20Center%20Floor%2033%2C%20New%20York%2C%20NY%2010006!5e0!3m2!1sen!2sus!4v1591610338572!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0044980923367!2d-73.9931893844625!3d40.73992654384333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3bb602807%3A0xffbac72e7fbec82f!2sJeffrey%20Beers%20International!5e0!3m2!1sen!2sus!4v1591988942008!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 <?php /*
 <?php
   $r = rand();

@@ -1,8 +1,8 @@
 body {
   &.front-page,
-  &.projects:not(.project-archive) {
+  &.project-detail {
      > main {
-       margin-top: 0;
+       padding-top: 0;
        position: relative;
        z-index: 0;
      }
@@ -63,6 +63,12 @@ body {
 
 
      }
+   }
+
+   &.front-page {
+      > main > section > div {
+        padding: 0;
+      }
    }
 }
 
