@@ -2,6 +2,9 @@
   padding: 70px 0;
 }
 .people-grid {
+  h4 {
+    font-family: $headingFF;
+  }
   > div {
     @include contentWidth;
   }
@@ -25,6 +28,18 @@
         .grid-title {
           opacity: 1;
         }
+      }
+      display: block;
+      position: relative;
+      &:before {
+        width: 100%;
+        height: 151px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        content: "";
+        background: linear-gradient(0deg,rgba($black,.3) 0%, rgba($black,0) 100%);
       }
     }
 

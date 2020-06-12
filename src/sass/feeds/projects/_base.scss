@@ -86,6 +86,7 @@
 }
 
 .project-grid {
+  font-family: $headingFF;
   > div {
     @include contentWidth;
   }
