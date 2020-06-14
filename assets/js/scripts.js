@@ -59,6 +59,16 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
     $(this).toggleClass('open');
     $(this).parent().toggleClass('open');
   });
+
+  $('.nav-primary .menu > li').on('mouseenter',function() {
+    $(this).addClass('hover');
+  }).on('mouseleave',function() {
+    var t = $(this);
+    setTimeout(function() {
+      t.removeClass('hover');
+    },500);
+
+  });
 })(jQuery);
 
 (function($) {

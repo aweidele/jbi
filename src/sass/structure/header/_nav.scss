@@ -117,6 +117,7 @@ nav {
 
       @media #{$mediaDesktop} {
         &:hover,
+        &.hover,
         &.current-menu-item,
         &.current-menu-ancestor {
           .sub-menu {
