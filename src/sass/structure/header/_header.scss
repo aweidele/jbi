@@ -1,12 +1,16 @@
 .main-header {
   width: 100%;
-  height: $headerHeight;
+  height: $headerHeightM;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   background: rgba($white,.99);
   transition: all .25s;
+
+  @media #{$mediaDesktop} {
+    height: $headerHeight;
+  }
 
   .loggedin & {
     top: 32px;

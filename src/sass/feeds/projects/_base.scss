@@ -82,7 +82,11 @@
 
 // PROJECT GRID
 .related-projects {
-  padding: 70px 0;
+  //padding: 40px 0;
+
+  @media #{$mediaDesktop} {
+    padding: 70px 0;
+  }
 }
 
 .project-grid {

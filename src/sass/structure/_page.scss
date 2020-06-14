@@ -1,6 +1,11 @@
 body {
   > main {
-    padding: 70px 0;
+    padding: $headerHeightM 0;
+
+    @media #{$mediaDesktop} {
+      padding: $headerHeight 0;
+    }
+
     > section {
       > div {
         @include contentWidth;
