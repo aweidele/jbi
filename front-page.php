@@ -26,7 +26,7 @@
     <?php foreach($content['navigation'] as $nav) { ?>
       <li>
         <div></div>
-        <a href="<?php echo $nav['link']['title']; ?>">
+        <a href="<?php echo $nav['link']['url']; ?>">
           <span><?php echo $nav['link']['title']; ?></span>
           <img src="<?php echo $nav['image']['sizes']['proj-hero']; ?>">
         </a>
