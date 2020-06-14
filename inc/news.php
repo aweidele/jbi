@@ -3,27 +3,35 @@
     'post_type'=>'press',
     'posts_per_page'=>$c['number_of_articles']
   ];
+  if($c['show_only_featured']) {
+    $args['meta_query'] = [
+      [
+        'key'   => 'featured',
+        'value' => '1',
+      ]
+    ];
+  }
   $news = new WP_Query($args);
   $owl_options = [
-    "margin"=>20,
     "items"=>3,
     "loop"=>true,
     "autoplay"=>true,
-    "autoplayTimeout"=>3000,
+    "autoplayTimeout"=>4000,
     "responsive"=>[
       "0"=>[
-        "items"=>1
+        "items"=>1.5,
+        "margin"=>10
       ],
       "500"=>[
         "items"=>2
       ],
       "768"=>[
-        "items"=>3
+        "items"=>3,
+        "margin"=>20
       ]
     ]
   ];
   $owl = json_encode($owl_options);
-  // $owl = '{"margin":20,"items":3,"loop":true,"autoplay":true,"autoplayTimeout":3000,"responsive":{"0":{"items":1},"500":{"items":2},"768":{"items":3}}}';
 ?>
 <div class="news-carousel">
   <div class="owl-carousel js-carousel" data-options='<?php echo $owl ?>'>

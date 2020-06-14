@@ -5,7 +5,7 @@
     @include contentWidth;
     display: flex;
     flex-direction: column;
-    
+
     @media #{$mediaTablet} {
       justify-content: space-between;
       flex-direction: row-reverse;
@@ -156,4 +156,5 @@
   .date {
     margin-bottom: .5em;
   }
+
 }
