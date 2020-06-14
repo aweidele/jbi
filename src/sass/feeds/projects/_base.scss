@@ -82,6 +82,7 @@
 
 // PROJECT GRID
 .related-projects {
+  margin: 40px 0;
   //padding: 40px 0;
 
   @media #{$mediaDesktop} {
@@ -158,6 +159,10 @@
   padding: 0 0 70px;
   text-align: center;
   margin: 0 -6px;
+
+  .related-projects.archive & {
+    padding: 70px 0 0;
+  }
 
   @media #{$mediaTablet} {
     display: flex;

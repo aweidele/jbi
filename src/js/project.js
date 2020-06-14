@@ -7,7 +7,6 @@
       var headerH = $('.main-header').height();
     }).on('scroll',function() {
       var s = $(window).scrollTop() + headerH;
-      console.log(s + '/' + heroH);
       if(s > heroH) {
         $('body').addClass('scrolled');
       } else {

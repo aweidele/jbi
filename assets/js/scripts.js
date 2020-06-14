@@ -91,7 +91,6 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
       var headerH = $('.main-header').height();
     }).on('scroll',function() {
       var s = $(window).scrollTop() + headerH;
-      console.log(s + '/' + heroH);
       if(s > heroH) {
         $('body').addClass('scrolled');
       } else {

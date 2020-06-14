@@ -41,7 +41,8 @@
         <?php include 'inc/grid.php'; ?>
     </div>
   </article>
-  <?php if ( sizeof( $content['related_projects'] ) ) { ?>
+  <!-- <pre><?php print_r($content['related_projects']); ?></pre> -->
+  <?php if ( $content['related_projects'] ) { ?>
   <div class="project-grid archive related-projects">
     <div>
       <h3>Related Projects</h3>
