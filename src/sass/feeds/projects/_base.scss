@@ -18,7 +18,11 @@
     bottom: 0;
     color: $white;
     text-shadow: 0 0 2px $black;
-    padding-bottom: 45px;
+    padding-bottom: 10px;
+
+    @media #{$mediaTablet} {
+      padding-bottom: 45px;
+    }
 
     span,
     small {

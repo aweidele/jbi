@@ -4,22 +4,29 @@
     $content = get_fields();
     $grid = $content['grid'];
     if( $grid[0]['acf_fc_layout'] == 'text_block' ) {
+      $text = "<h2>\n";
+      $text .= "<span>".get_the_title()."</span>\n";
+      $text .= "<small>".$content['location']."</small>\n";
+      $text .= "</h2>\n";
+      $text .= $grid[0]['text'];
       if(
         $content['photo_credit'] ||
         $content['size'] ||
         $content['scope']
       ) {
-        $grid[0]['text'] .= '<dl class="project-stats">';
+        $text .= '<dl class="project-stats">';
         if( $content['photo_credit'] ) {
-          $grid[0]['text'] .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
+          $text .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
         }
         if( $content['size'] ) {
-          $grid[0]['text'] .= '<dt>Size</dt><dd>'.$content['size'].'</dd>';
+          $text.= '<dt>Size</dt><dd>'.$content['size'].'</dd>';
         }
         if( $content['scope'] ) {
-          $grid[0]['text'] .= '<dt>Scope</dt><dd>'.$content['scope'].'</dd>';
+          $text .= '<dt>Scope</dt><dd>'.$content['scope'].'</dd>';
         }
-        $grid[0]['text'] .= '</dl>';
+        $text .= '</dl>';
+
+        $grid[0]['text'] = $text;
       }
     }
 ?>
@@ -27,6 +34,7 @@
     <picture>
       <img src="<?php echo $content['hero_image']['sizes']['proj-hero']?>" alt="<?php echo $content['hero_image']['alt']; ?>">
     </picture>
+    <?php /*
     <div class="project-title">
       <div>
         <h2>
@@ -35,6 +43,7 @@
         </h2>
       </div>
     </div>
+    */ ?>
   </header>
   <article class="project-main">
     <div>

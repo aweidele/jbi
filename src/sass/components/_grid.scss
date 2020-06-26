@@ -1,6 +1,18 @@
 .content-grid {
   margin: 0 -6px;
 
+  h2 {
+    span,
+    small {
+      display: block;
+    }
+
+    small {
+      font-size: 1em;
+      text-transform: none;
+    }
+  }
+
   @media #{$mediaTablet} {
     display: flex;
     justify-content: flex-start;

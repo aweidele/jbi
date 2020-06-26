@@ -437,7 +437,7 @@ h1,
 h2,
 .h2 {
   font-family: "Expletus Sans", cursive;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 1.33333em;
   font-weight: 700;
@@ -446,7 +446,7 @@ h2,
 h3,
 .h3 {
   font-family: "Expletus Sans", cursive;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   text-transform: uppercase;
   line-height: 1.33333em;
   font-weight: 700;
@@ -847,6 +847,16 @@ body > main > section.bg-primary {
   margin: 0 -0.375rem;
 }
 
+.content-grid h2 span,
+.content-grid h2 small {
+  display: block;
+}
+
+.content-grid h2 small {
+  font-size: 1em;
+  text-transform: none;
+}
+
 .content-grid [class^="col"] {
   padding: 0.375rem;
 }
@@ -905,7 +915,7 @@ body > main > section.bg-primary {
   bottom: 0;
   color: #FFFFFF;
   text-shadow: 0 0 2px #000000;
-  padding-bottom: 2.8125rem;
+  padding-bottom: 0.625rem;
 }
 
 .project-hero .project-title span,
@@ -1345,6 +1355,16 @@ body > main > section.bg-primary {
 }
 
 @media screen and (min-width: 768px) {
+  h2,
+  .h2 {
+    font-size: 1.875rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+  }
+
   .main-header > div {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -1385,6 +1405,10 @@ body > main > section.bg-primary {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+
+  .project-hero .project-title {
+    padding-bottom: 2.8125rem;
   }
 
   .project-grid article {

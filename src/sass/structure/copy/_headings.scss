@@ -13,17 +13,25 @@ h1,.h1 {
 
 h2,.h2 {
   font-family: $headingFF;
-  font-size: 30px;
-  text-transform: uppercase;
-  line-height: (40 / 30) * 1em;
-  font-weight: $bold;
-}
-h3,.h3 {
-  font-family: $headingFF;
   font-size: 24px;
   text-transform: uppercase;
   line-height: (40 / 30) * 1em;
   font-weight: $bold;
+
+  @media #{$mediaTablet} {
+    font-size: 30px;
+  }
+}
+h3,.h3 {
+  font-family: $headingFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: (40 / 30) * 1em;
+  font-weight: $bold;
+
+  @media #{$mediaTablet} {
+    font-size: 24px;
+  }
 }
 h5,.h5 {
   font-family: $headingFF;
