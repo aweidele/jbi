@@ -715,6 +715,10 @@ body > main > section.bg-primary {
   position: relative;
 }
 
+.hp-slideshow .owl-carousel {
+  max-width: none;
+}
+
 .hp-slideshow .js-carousel .owl-item {
   height: 100vh;
 }

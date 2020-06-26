@@ -5,6 +5,10 @@
   height: 100vh;
   position: relative;
 
+  .owl-carousel {
+    max-width: none;
+  }
+
   .js-carousel {
     .owl-item {
       height: 100vh;
