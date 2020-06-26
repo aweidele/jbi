@@ -1375,6 +1375,10 @@ body > main > section.bg-primary {
             align-items: flex-end;
   }
 
+  .main-footer .contact br {
+    display: none;
+  }
+
   .hp-navigation a {
     font-size: 5rem;
   }

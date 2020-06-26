@@ -9,11 +9,11 @@
         <div>
           <p><strong><a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a></strong></p>
           <p>
-            <span><?php echo $contact['address_1']; ?></span>
-            <span><?php echo $contact['address_2']; ?></span>
-            <span><?php echo $contact['city']; ?></span>
-            <span><?php echo $contact['state']; ?></span>
-            <span><?php echo $contact['zip']; ?></span>
+            <?php if($contact['address1']) { ?><span><?php echo $contact['address_1']; ?><br></span><?php } ?>
+            <?php if($contact['address_2']) { ?><span><?php echo $contact['address_2']; ?><br></span><?php } ?>
+            <?php if($contact['city']) { ?><span><?php echo $contact['city']; ?></span><?php } ?>
+            <?php if($contact['state']) { ?><span><?php echo $contact['state']; ?></span><?php } ?>
+            <?php if($contact['zip']) { ?><span><?php echo $contact['zip']; ?></span><?php } ?>
           </p>
           <p>
             <?php echo $contact['phone']; ?>
