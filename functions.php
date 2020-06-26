@@ -225,8 +225,8 @@ function modify_query( $query ) {
   }
 
   if (
-    ( is_post_type_archive('projects')
-      || $query->is_tax('industry')
+    ( (is_post_type_archive('projects')
+      || $query->is_tax('industry')) && !is_admin()
     )
     && $query->is_main_query()
   ) {
