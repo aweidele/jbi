@@ -3,6 +3,12 @@ h1,.h1 {
   font-weight: $lt;
   text-transform: uppercase;
   font-size: 25px;
+
+  @media #{$mediaXs} {
+    .main-header & {
+      font-size: 14px;
+    }
+  }
 }
 
 h2,.h2 {
