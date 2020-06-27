@@ -211,6 +211,37 @@ function custom_post_type() {
 }
 add_action( 'init', 'custom_post_type', 0 );
 
+// POST TYPE COLUMNS
+add_filter( 'manage_projects_posts_columns', 'jbi_filter_posts_columns' );
+function jbi_filter_posts_columns( $columns ) {
+  $columns['featured'] = __( 'Featured' );
+  $columns['image'] = __( 'Image', 'smashing' );
+
+  $columns = array(
+    'cb' => $columns['cb'],
+    'image' => __( 'Image' ),
+    'title' => __( 'Title' ),
+    'featured' => __( 'Featured ')
+    );
+  return $columns;
+}
+
+add_action( 'manage_projects_posts_custom_column', 'jbi_realestate_column', 10, 2);
+function jbi_realestate_column( $column, $post_id ) {
+  // Image column
+  if ( 'image' === $column ) {
+    $img = get_field('thumbnail',$post_id);
+    echo '<a href="/wp-admin/post.php?post='.$post_id.'&action=edit"><img src="'.$img['sizes']['thumbnail'].'"></a>';
+  }
+
+  if ( 'featured' === $column ) {
+    $feat = get_field('featured',$post_id);
+    if($feat) {
+      echo "Featured";
+    }
+  }
+}
+
 // QUERY MODIFICATION
 function modify_query( $query ) {
   if (
