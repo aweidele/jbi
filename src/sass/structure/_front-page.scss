@@ -59,20 +59,23 @@
       }
     }
   }
+}
 
-  .scroll-down {
+.scroll-down {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+  a {
     width: 46px;
     height: 95px;
-    position: absolute;
-    bottom: $gutter;
-    left: calc(50% - 18px);
-    z-index: 10;
+    display: block;
+    margin: auto;
     background-image: url('../images/arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all .25s;
     transform: rotate(90deg);
-    overflow: hidden;
     text-indent: -999999px;
 
     @include hover {

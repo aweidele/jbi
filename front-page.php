@@ -19,8 +19,12 @@
       <div><img src="<?php echo $slide['sizes']['proj-hero']; ?>"></div>
     <?php } ?>
   </div>
-  <a href="#hp-navigation" class="scroll-down">Scroll Down</a>
 </section>
+<div class="scroll-down">
+  <div>
+    <a href="#hp-navigation">Scroll Down</a>
+  </div>
+</div>
 <nav class="hp-navigation" id="hp-navigation">
   <ul>
     <?php foreach($content['navigation'] as $nav) { ?>

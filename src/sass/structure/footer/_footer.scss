@@ -1,5 +1,7 @@
 .main-footer {
   padding: $gutter 0;
+  position: relative;
+  z-index: 1;
 
   a {
     color: $primary;

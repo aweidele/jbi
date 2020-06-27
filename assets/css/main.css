@@ -370,7 +370,7 @@ body {
 
 body.front-page > main,
 body.project-detail > main {
-  padding-top: 0;
+  padding: 0;
   position: relative;
   z-index: 0;
 }
@@ -586,6 +586,8 @@ p {
 
 .main-footer {
   padding: 1.25rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .main-footer a {
@@ -772,26 +774,29 @@ body > main > section.bg-primary {
   right: 1.25rem;
 }
 
-.hp-slideshow .scroll-down {
+.scroll-down {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.scroll-down a {
   width: 2.875rem;
   height: 5.9375rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: calc(50% - 1.125rem);
-  z-index: 10;
+  display: block;
+  margin: auto;
   background-image: url("../images/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-transition: all .25s;
-  transition: all .25s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  overflow: hidden;
   text-indent: -999999px;
 }
 
-.hp-slideshow .scroll-down:hover,
-.hp-slideshow .scroll-down:focus {
+.scroll-down a:hover,
+.scroll-down a:focus {
   opacity: .5;
 }
 

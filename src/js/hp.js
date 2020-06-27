@@ -14,13 +14,35 @@
   }
 
   if($('.scroll-down').length) {
+    windowResize();
+    $(window).load(function() {
+      windowResize();
+    }).on('resize',function() {
+      windowResize();
+    }).on('scroll',function() {
+
+    });
     $('.scroll-down').on('click',function(e){
       e.preventDefault();
-      var h = $(this).prop('href');
-      var s = $('#' + h.substring(h.indexOf("#")+1));
+      // var h = $(this).prop('href');
+      // var s = $('#' + h.substring(h.indexOf("#")+1));
+      if( $('.hp-navigation li.active').length ) {
+        var lastActive = $('.hp-navigation li.active').last();
+        if( lastActive.index() < lastActive.siblings().length ) {
+          var next = lastActive.next();
+        }
+      } else {
+        var next = $('.hp-navigation li:first-child');
+      }
+      var s = next.offset().top;
       $('body,html').animate({
-        'scrollTop': s.offset().top
+        'scrollTop': s
       },500);
     });
+  }
+
+  function windowResize() {
+    var docH = $('body').height();
+    var footH = $('.main-footer').height();
   }
 })(jQuery);

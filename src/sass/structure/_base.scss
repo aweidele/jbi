@@ -2,10 +2,10 @@ body {
   &.front-page,
   &.project-detail {
     > main {
-      padding-top: 0;
+      padding: 0;
       position: relative;
       z-index: 0;
-    }    
+    }
   }
   &.front-page,
   &.project-detail:not(.scrolled) {
