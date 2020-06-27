@@ -12,4 +12,15 @@
       });
     });
   }
+
+  if($('.scroll-down').length) {
+    $('.scroll-down').on('click',function(e){
+      e.preventDefault();
+      var h = $(this).prop('href');
+      var s = $('#' + h.substring(h.indexOf("#")+1));
+      $('body,html').animate({
+        'scrollTop': s.offset().top
+      },500);
+    });
+  }
 })(jQuery);
