@@ -32,6 +32,7 @@
     $body_classes[] = 'project-detail';
   }
 ?>
+<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();  ?>/assets/images/favicon-32x32.png">
 </head>
 <body class="<?=implode($body_classes, " ")?>">
   <header class="main-header">
