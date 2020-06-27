@@ -15,14 +15,14 @@
         $content['scope']
       ) {
         $text .= '<dl class="project-stats">';
-        if( $content['photo_credit'] ) {
-          $text .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
-        }
         if( $content['size'] ) {
           $text.= '<dt>Size</dt><dd>'.$content['size'].'</dd>';
         }
         if( $content['scope'] ) {
           $text .= '<dt>Scope</dt><dd>'.$content['scope'].'</dd>';
+        }
+        if( $content['photo_credit'] ) {
+          $text .= '<dt>Photographer</dt><dd>'.$content['photo_credit'].'</dd>';
         }
         $text .= '</dl>';
 
