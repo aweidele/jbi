@@ -11,6 +11,7 @@
   if( $content['slideshow_autoplay'] ) {
     $owl["autoplay"] = true;
     $owl["autoplayTimeout"] = $content['slideshow_autoplay_timeout'];
+    // $owl["autoplayTimeout"] = 1000;
   }
 ?>
 <section class="hp-slideshow">

@@ -2,8 +2,15 @@
   // Carousel
   $(".js-carousel").each(function() {
     var options = $(this).data("options");
-    console.log(options);
     $(this).owlCarousel(options);
+  });
+
+  $('.hp-slideshow .owl-carousel').on('dragged.owl.carousel',function() {
+    $(this).trigger('stop.owl.autoplay');
+  });
+
+  $('.hp-slideshow .owl-carousel .owl-nav button').on('click',function() {
+    $('.hp-slideshow .owl-carousel').trigger('stop.owl.autoplay');
   });
 
   // HP Nav
