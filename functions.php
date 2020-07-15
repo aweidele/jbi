@@ -221,6 +221,7 @@ function jbi_filter_posts_columns( $columns ) {
     'cb' => $columns['cb'],
     'image' => __( 'Image' ),
     'title' => __( 'Title' ),
+    'industry' => __( 'Sector' ),
     'featured' => __( 'Featured ')
     );
   return $columns;
@@ -237,8 +238,17 @@ function jbi_realestate_column( $column, $post_id ) {
   if ( 'featured' === $column ) {
     $feat = get_field('featured',$post_id);
     if($feat) {
-      echo "Featured";
+      echo '<span class="dashicons dashicons-yes" style="font-size: 2em;"></span>';
     }
+  }
+
+  if ( 'industry' === $column ) {
+    $list = array();
+    $terms = get_the_terms( $post_id,'industry' );
+    foreach($terms as $term) {
+      $list[] = $term->name;
+    }
+    echo implode( ', ', $list );
   }
 }
 
@@ -271,6 +281,14 @@ function modify_query( $query ) {
         ]
       ];
     }
+  }
+
+  if (
+      ( $query->is_tax('industry') )
+      && $query->is_main_query()
+      && !is_admin()
+  ) {
+    $query->query_vars['orderby'] = 'menu_order';
   }
 }
 add_action( 'pre_get_posts', 'modify_query' );
