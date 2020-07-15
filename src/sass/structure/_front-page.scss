@@ -27,12 +27,17 @@
       button {
         position: absolute;
         top: calc(50% - 47px);
-        width: 46px;
-        height: 95px;
+        width: (46px* .6);
+        height: (95px* .6);
         background-image: url('../images/arrow.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: all .25s;
+
+        @media #{$mediaDesktop} {
+          width: 46px;
+          height: 95px;
+        }
 
         span {
           @include srOnly;
@@ -68,8 +73,8 @@
     bottom: 0;
     z-index: 10;
   a {
-    width: 46px;
-    height: 95px;
+    width: (46px* .6);
+    height: (95px* .6);
     display: block;
     margin: auto;
     background-image: url('../images/arrow.svg');
@@ -77,6 +82,11 @@
     background-repeat: no-repeat;
     transform: rotate(90deg);
     text-indent: -999999px;
+
+    @media #{$mediaDesktop} {
+      width: 46px;
+      height: 95px;
+    }
 
     @include hover {
       opacity: .5;

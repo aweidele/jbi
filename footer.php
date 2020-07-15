@@ -9,7 +9,7 @@
         <div>
           <p><strong><a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a></strong></p>
           <p>
-            <?php if($contact['address1']) { ?><span><?php echo $contact['address_1']; ?><br></span><?php } ?>
+            <?php if($contact['address_1']) { ?><span><?php echo $contact['address_1']; ?><br></span><?php } ?>
             <?php if($contact['address_2']) { ?><span><?php echo $contact['address_2']; ?><br></span><?php } ?>
             <?php if($contact['city']) { ?><span><?php echo $contact['city']; ?></span><?php } ?>
             <?php if($contact['state']) { ?><span><?php echo $contact['state']; ?></span><?php } ?>

@@ -733,8 +733,8 @@ body > main > section.bg-primary {
 .hp-slideshow .js-carousel .owl-nav button {
   position: absolute;
   top: calc(50% - 2.9375rem);
-  width: 2.875rem;
-  height: 5.9375rem;
+  width: 1.725rem;
+  height: 3.5625rem;
   background-image: url("../images/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -783,8 +783,8 @@ body > main > section.bg-primary {
 }
 
 .scroll-down a {
-  width: 2.875rem;
-  height: 5.9375rem;
+  width: 1.725rem;
+  height: 3.5625rem;
   display: block;
   margin: auto;
   background-image: url("../images/arrow.svg");
@@ -1600,6 +1600,16 @@ body > main > section.bg-primary {
 
   .section-inner {
     padding: 0 5.75rem;
+  }
+
+  .hp-slideshow .js-carousel .owl-nav button {
+    width: 2.875rem;
+    height: 5.9375rem;
+  }
+
+  .scroll-down a {
+    width: 2.875rem;
+    height: 5.9375rem;
   }
 
   .hp-navigation a {
