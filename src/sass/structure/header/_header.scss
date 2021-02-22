@@ -19,6 +19,10 @@
   h1 {
     position: relative;
     z-index: 20;
+
+    span {
+      @include srOnly;
+    }
   }
 
   > div {
