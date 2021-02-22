@@ -19,9 +19,21 @@
   h1 {
     position: relative;
     z-index: 20;
+    width: 627px;
+    max-width: 100%;
+    padding-bottom: 5%;
 
     span {
       @include srOnly;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
     }
   }
 
