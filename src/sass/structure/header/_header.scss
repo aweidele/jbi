@@ -20,6 +20,10 @@
     position: relative;
     z-index: 20;
 
+    @media #{$mediaPhone} {
+      max-width: 90%;
+    }
+
     span {
       @include srOnly;
     }
@@ -107,9 +111,6 @@
         }
       }
     }
-  }
-  h1 {
-
   }
 
   a {

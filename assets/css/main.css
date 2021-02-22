@@ -589,6 +589,8 @@ p {
   font-family: "Expletus Sans", cursive;
   font-size: 0.9375rem;
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .main-header nav a {
@@ -1806,6 +1808,10 @@ body > main > section.bg-primary {
 }
 
 @media screen and (max-width: 767.9px) {
+  .main-header h1 {
+    max-width: 90%;
+  }
+
   .content-grid .col-1 img {
     width: auto;
     max-height: 520px;

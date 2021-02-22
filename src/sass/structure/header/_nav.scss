@@ -2,6 +2,7 @@ nav {
   font-family: $headingFF;
   font-size: 15px;
   position: relative;
+  flex-shrink: 0;
 
   a {
     color: $primary;
