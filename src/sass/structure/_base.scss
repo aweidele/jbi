@@ -38,10 +38,10 @@ body {
 
        @media #{$mediaToggleHeader} {
           .open h1 a {
-            color: $primary;
+            color: $accent-1;
 
             @include hover {
-              color: rgba($primary,.4);
+              color: $secondary;
             }
           }
        }

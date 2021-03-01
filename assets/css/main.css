@@ -1702,14 +1702,14 @@ body > main > section.bg-primary {
 @media screen and (max-width: 1024.9px) {
   body.front-page .main-header .open h1 a,
   body.project-detail:not(.scrolled) .main-header .open h1 a {
-    color: #1E3141;
+    color: #07144E;
   }
 
   body.front-page .main-header .open h1 a:hover,
   body.front-page .main-header .open h1 a:focus,
   body.project-detail:not(.scrolled) .main-header .open h1 a:hover,
   body.project-detail:not(.scrolled) .main-header .open h1 a:focus {
-    color: rgba(30, 49, 65, 0.4);
+    color: #707070;
   }
 
   .main-header .hamburger.open + nav {
