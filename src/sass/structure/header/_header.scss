@@ -33,6 +33,11 @@
       width: 484px;
       max-width: 90%;
       padding-bottom: 5%;
+      color: $accent-1;
+
+      @include hover {
+        color: $secondary;
+      }
     }
 
     svg {

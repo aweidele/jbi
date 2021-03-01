@@ -501,6 +501,12 @@ p {
   width: 30.25rem;
   max-width: 90%;
   padding-bottom: 5%;
+  color: #07144E;
+}
+
+.main-header h1 a:hover,
+.main-header h1 a:focus {
+  color: #707070;
 }
 
 .main-header h1 svg {
