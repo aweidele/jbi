@@ -2,8 +2,9 @@
  *  Owl Carousel - Core
  */
 
-@import url("https://fonts.googleapis.com/css?family=Assistant:300,400,700|Expletus+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;
 
+400;700&display=swap");
 .owl-carousel {
   display: none;
   width: 100%;
@@ -436,7 +437,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 1.33333em;
@@ -445,7 +446,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
   line-height: 1.33333em;
@@ -454,7 +455,7 @@ h3,
 
 h5,
 .h5 {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   font-size: 1.125rem;
 }
 
@@ -592,7 +593,7 @@ p {
 }
 
 .main-header nav {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   font-size: 0.9375rem;
   position: relative;
   -ms-flex-negative: 0;
@@ -857,7 +858,7 @@ body > main > section.bg-primary {
   text-align: center;
   text-shadow: 0px 4px 7px #707070;
   text-decoration: none;
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   font-weight: 700;
   background: #1E3141;
 }
@@ -996,7 +997,7 @@ body > main > section.bg-primary {
 }
 
 .grid-title small {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
   line-height: 1.33333em;
   font-weight: 700;
   font-size: 1.25em;
@@ -1024,7 +1025,7 @@ body > main > section.bg-primary {
 }
 
 .project-grid {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
 }
 
 .project-grid > div {
@@ -1110,7 +1111,7 @@ body > main > section.bg-primary {
 }
 
 .press-listing .articles article .date {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
 }
 
 .press-listing .articles article span {
@@ -1243,7 +1244,7 @@ body > main > section.bg-primary {
 }
 
 .people-grid h4 {
-  font-family: "Expletus Sans", cursive;
+  font-family: "Assistant", sans-serif;
 }
 
 .people-grid > div {
