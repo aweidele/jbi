@@ -2,6 +2,10 @@
 // Enqueue Scripts and Styles
 function enqueue_styles() {
 
+  wp_enqueue_style( 'google_font',
+    '//fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap'
+  );
+
   wp_enqueue_style( 'main_style',
       get_stylesheet_directory_uri() . '/assets/css/main.css'
   );

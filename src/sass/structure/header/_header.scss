@@ -19,7 +19,7 @@
   h1 {
     position: relative;
     z-index: 20;
-    transform: translateY(1px);
+    transform: translateY(2px);
 
     @media #{$mediaPhone} {
       max-width: 90%;
