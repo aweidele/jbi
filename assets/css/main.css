@@ -446,6 +446,8 @@ p {
 .main-header h1 {
   position: relative;
   z-index: 20;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .main-header h1 span {
@@ -1779,8 +1781,8 @@ body>main>section.bg-primary {
 @media screen and (max-width: 767.9px) {
   .main-header h1 {
     max-width: 90%;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .content-grid .col-1 img {
