@@ -446,8 +446,8 @@ p {
 .main-header h1 {
   position: relative;
   z-index: 20;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 .main-header h1 span {
