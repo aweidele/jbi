@@ -34,7 +34,7 @@
 
   $favicon = get_field('favicon', 'option');
 ?>
-<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();  ?>/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" href="<?php echo $favicon["url"]; ?>">
 </head>
 <body class="<?=implode($body_classes, " ")?>">
   <header class="main-header">
@@ -55,4 +55,3 @@
     </div>
   </header>
   <main>
-<pre><?php print_r($favicon); ?></pre>
