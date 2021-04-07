@@ -1779,6 +1779,8 @@ body>main>section.bg-primary {
 @media screen and (max-width: 767.9px) {
   .main-header h1 {
     max-width: 90%;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 
   .content-grid .col-1 img {

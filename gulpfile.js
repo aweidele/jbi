@@ -13,7 +13,7 @@ var gcmq = require('gulp-group-css-media-queries');
 
 var sassOptions = {
   errLogToConsole: true,
-  outputStyle: 'expanded'
+  outputStyle: 'compressed'
 };
 
 var autoprefixerOptions = {
