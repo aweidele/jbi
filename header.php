@@ -31,6 +31,8 @@
   if ( is_singular('projects') ) {
     $body_classes[] = 'project-detail';
   }
+
+  $favicon = get_field('favicon', 'option');
 ?>
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();  ?>/assets/images/favicon-32x32.png">
 </head>
@@ -53,3 +55,4 @@
     </div>
   </header>
   <main>
+<pre><?php print_r($favicon); ?></pre>
