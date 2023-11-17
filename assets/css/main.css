@@ -937,12 +937,12 @@ body>main>section.bg-primary {
 .project-grid a {
   display: block;
   position: relative;
-  color: #000;
-  text-decoration-color: rgba(0,0,0,0);
+  color: #07144E;
+  text-decoration-color: rgba(7,20,78,0);
 }
 
 .project-grid a:hover {
-  text-decoration-color: #000;
+  text-decoration-color: #07144E;
 }
 
 .project-grid picture {
@@ -1143,6 +1143,11 @@ body>main>section.bg-primary {
 }
 
 .people-grid .grid-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
   opacity: 0;
 }
 

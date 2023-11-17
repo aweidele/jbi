@@ -131,11 +131,11 @@
   a {
     display: block;
     position: relative;
-    color: $black;
-    text-decoration-color: rgba($black, 0);
+    color: $accent-1;
+    text-decoration-color: rgba($accent-1, 0);
 
     &:hover {
-      text-decoration-color: $black;
+      text-decoration-color: $accent-1;
     }
   }
 
