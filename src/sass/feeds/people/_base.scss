@@ -39,7 +39,7 @@
         left: 0;
         z-index: 0;
         content: "";
-        background: linear-gradient(0deg,rgba($black,.3) 0%, rgba($black,0) 100%);
+        background: linear-gradient(0deg, rgba($black, 0.3) 0%, rgba($black, 0) 100%);
       }
     }
 
@@ -52,19 +52,18 @@
       padding: 12px;
     }
 
-    &:nth-child(3n + 2) {
-      @media #{$mediaTablet} {
-        transform: translateY(-35px);
-      }
-      @media #{$mediaDesktop} {
-        transform: translateY(-70px);
-      }
-    }
+    // &:nth-child(3n + 2) {
+    //   @media #{$mediaTablet} {
+    //     transform: translateY(-35px);
+    //   }
+    //   @media #{$mediaDesktop} {
+    //     transform: translateY(-70px);
+    //   }
+    // }
   }
 }
 
 .people-grid-inner {
-  padding: 68px 0 70px;
   margin: 0 -6px;
 
   @media #{$mediaTablet} {
@@ -85,7 +84,7 @@
   left: 0;
   top: 0;
   display: none;
-  transition: all .25s;
+  transition: all 0.25s;
 
   @media #{$mediaTablet} {
     left: 100%;
@@ -119,7 +118,7 @@
     text-indent: -9999px;
     overflow: hidden;
     cursor: pointer;
-    transition: all .25s;
+    transition: all 0.25s;
 
     &:before,
     &:after {
@@ -130,7 +129,7 @@
       left: 50%;
       content: "";
       background: $white;
-      transition: all .25s;
+      transition: all 0.25s;
     }
 
     &:before {
@@ -141,7 +140,7 @@
     }
 
     @include hover {
-      background: rgba($white,.9);
+      background: rgba($white, 0.9);
       border-color: $primary;
 
       &:before,
@@ -162,17 +161,16 @@
   }
 }
 
-
 .people-grid article {
   @media #{$mediaTablet} {
     &:nth-child(3n),
-    &:nth-child(3n+1) {
+    &:nth-child(3n + 1) {
       .people-bio {
         top: -70px;
       }
     }
 
-    &:nth-child(3n+2) {
+    &:nth-child(3n + 2) {
       .people-bio {
         top: 70px;
       }

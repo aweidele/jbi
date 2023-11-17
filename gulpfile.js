@@ -39,7 +39,7 @@ gulp.task("sass", function () {
       .pipe(sass(sassOptions).on("error", sass.logError))
       //.pipe(sourcemaps.write())
       .pipe(gcmq())
-      .pipe(autoprefixer(autoprefixerOptions))
+      // .pipe(autoprefixer(autoprefixerOptions))
       .pipe(pxtorem(pxtoremOptions))
       .pipe(gulp.dest("assets/css/"))
   );
